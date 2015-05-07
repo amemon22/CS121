@@ -1,0 +1,157 @@
+» About
+
+                    
+                    » About the School» Bren ICS Mission» Dean's Welcome» About the Bren Gift» Facts and Figures» Donald Bren Hall» Visit the Bren School» Contact Us» Equity & Diversity               
+                
+                
+                    » Departments
+                    
+
+                    » Computer Science» Informatics» Statistics               
+                
+                
+                    » Research
+                
+                
+                    » Research Areas» Research Centers» Research Highlights
+                
+                
+                    » Education
+                    
+
+                    » Graduate
+                        
+                            Prospective StudentsPrograms of StudyM.S. Degree OverviewPh.D. Degree OverviewAcademic Year PlanFormsPoliciesFunding & HousingComputing SupportCampus ResourcesVisit the Bren SchoolGraduate Student Handbook
+
+                        » Undergraduate
+                        
+                            Academic AdvisingAcademic Year PlanPetitionsICS MajorsICS MinorsPolicies: Academic IntegrityPolicies: Academic StandingPolicies: Add, drop, & change optionsPolicies: Coursework outside UCIPolicies: Grade policyPolicies: Laptop & computer usePolicies: Withdrawal/ReadmissionGraduationICS Student LifeComputing Support
+                        » Prospective Undergrad» UCI Parents               
+                
+                    
+                    » People                      
+                    
+                
+                    » Faculty» Staff» Graduate Students   
+                 
+                
+                    » Community
+                    
+                    
+                    » Alumni» Friends» Parent Programs» Leadership Council» Make a Gift» News   
+                
+                
+                    » Get Involved
+                
+                
+                    » Tech Talks» Information Sessions» Sponsor Projects» Leadership Council» Corporate Partners» Sponsor Interns» Tech Jobs» Butterworth Competition               
+                
+
+
+
+
+
+
+            
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    
+
+Bren school home > Community > News > Features
+
+
+  
+
+
+
+
+
+
+
+
+
+ On cyberguard
+January 21, 2014You've been hacked
+
+
+
+
+
+
+
+
+
+View the story below or read it on the UCI News website.
+
+
+
+		In March, U.S. intelligence chiefs proclaimed that cyberattacks had become a greater national security concern than terrorism. Not to be outdone, lawmakers in the U.K. announced in July that cybercrime posed a larger threat to their homeland than a nuclear strike.
+Even Hollywood has gotten into the act, fueling people’s fears with movies about “cybergeddon” and crazed hackers. Mention this to Gene Tsudik, UC Irvine Chancellor’s Professor of computer science, and it’s obvious that the man does not scare easily.
+Tsudik is managing director of the campus’s Secure Computing & Networking Center, which aims to safeguard data and protect computer users’ privacy through advances in areas such as applied cryptography, information assurance and network security. And he has his own ideas about what we should really be worried about and why.
+“I think the threats are way overblown. There are a lot of people crying wolf,” Tsudik says. “They’re getting their information from PowerPoint presentations and parroting something about dire threats, but that’s not the case.
+“Industrial espionage is a very real thing. There’s a lot of it going on. But these Hollywood scenarios where someone presses a button and your hair dryer scalds you to death or your toaster bites you on the ear – that’s just silliness.”
+While hackers might not be able to sic your toaster on you, they can wreak serious havoc in other ways, which does concern Tsudik.
+In July, federal authorities indicted five Russians and a Ukrainian in the biggest cybercrime case in U.S. history. Prosecutors accused them of hacking into the computers of major financial institutions and retailers – such as Wet Seal, J.C. Penney Co. and Jet Blue – pilfering at least 160 million credit card numbers and causing more than $300 million in losses.
+Bank breaches, intellectual property theft, invasion of privacy, espionage, website takedowns and service disruptions are examples of the real threats that hackers pose to personal and national security.
+“We’re trying to make the public aware of what’s to come after an event like the Stuxnet incident,” Tsudik says, referring to the computer worm discovered in June 2010.
+“In that case, malware was designed by a very clever and capable party that targeted industrial controllers (often employed in nuclear plants) located in a certain four-letter Middle Eastern country [Iran]. Stuxnet really showed us the kind of awesome power that these attacks can have.”
+Some damage was caused by Stuxnet, though it’s unclear whether the target country’s nuclear program was affected. There is speculation that the U.S. and/or Israel may have been behind the worm.
+Cyberattack perpetrators include individuals exploiting the Internet for fun and profit; shady advertisers; political activists, or “hacktivists”; organized crime groups; terrorists; and – as Stuxnet shows – government agencies.
+“They can range from ‘script kiddies’ and wannabes – teenage malcontents just learning to mark their territory, with little understanding of the consequences – to sophisticated hackers,” Tsudik says.
+There are even tool kits available online for those who don’t have the technical know-how to break into systems. “In the so-called good old days, you had to be a really good programmer to be a hacker,” he notes. “There was a time in computing antiquity – the 1980s – when being called a hacker was something of a compliment. However, it means very little today, when you can simply download a ready-made kit and use it to mount an attack.”
+Cybercriminals typically target banks, credit card payment gateways and other high-profile Web services, he says. They can cripple companies and government entities by launching distributed denial-of-service attacks.
+“These can overwhelm a server with communication requests,” Tsudik says. “When someone enters a nonsense term in a website’s search box – some gobbledygook that doesn’t exist – it takes the server a while to search for it. If enough requests for useless information flood the system, it grinds to a halt. You’re hosed.”
+DDoS attacks can be carried out by armies of compromised computers, called botnets (short for robot networks). While they sound like something out of a sci-fi flick, botnets already permeate the Internet, generating spam, spreading viruses and shutting down websites.
+“It’s like an alien body inside a computer,” Tsudik says of the “soldiers” in these armies. “Somewhere, somehow, you downloaded the wrong software by clicking on something you saw on a website or opening an email. Now your computer is under the control of some remote master.
+“Imagine many thousands of these computers – sleeper agents. These botnets are just sitting around, waiting for some James Bond-like villain who controls them to tell them what to do next.”
+“That’s how the little Baltic country of Estonia – often described as the most wired country in Europe – got attacked in 2007,” he adds. Hackers, allegedly from Russia, used botnets to launch a massive DDoS attack, swamping Estonia’s government, banking and media websites. It was a computer-driven coup that lasted two weeks.
+“You can do it to a bank server, a government agency; anything with an Internet presence can be attacked,” Tsudik says. “If someone hits you with a DDoS, your customers will not be able to communicate with you. Whatever services you offer become incapacitated.”
+The hackers reportedly had political reasons for engaging in cyberwarfare against Estonia, but money is often the motivation for DDoS attacks. A disreputable company might hire hackers to shut down a competitor’s site.
+“If someone says, ‘I’ll pay you to hose them,’ I guarantee you that for the next few days they will not be doing business,” Tsudik says. “That’s a growing industry.” Botnets also can be used to collect – and sell – credit card numbers, passwords and other valuable information.
+While companies such as Microsoft and IBM have experts to fend off present-day threats, Tsudik and his colleagues at the Secure Computing & Networking Center strive to stay ahead of the hackers by safeguarding the Internet of tomorrow.
+“We try not to deal with problems that are here today – that wouldn’t be proactive research,” he says. “We’re trying to guess what Internet security problems might pop up five to 10 years from now.”
+His team is pursuing a range of forward-thinking projects, such as how to protect radio-frequency identification tags, which are turning up in credit cards, hotel room keys, badges, passports and even pets.
+RFID tags communicate with readers electronically, and as their popularity increases, so do privacy concerns. Nefarious types can capture information they transmit with a powerful antenna. To thwart eavesdroppers, Tsudik has developed authentication protocols that would eliminate RFID tags’ vulnerability; a patent is pending.
+He’s also creating an app, dubbed GenoDroid, that will let people safely store and use their own digitized DNA on a mobile device, so that they can securely share it with a doctor – or a prospective mate. Safeguarding one’s genome is crucial, Tsudik says: “It’s the ultimate identifier. It can tell if you’re predisposed to certain diseases or if you have genetic abnormalities. It’s enough to clone you. You want to make sure you don’t lose or reveal it.”
+He’s been studying computer security and applied cryptography (the technique of deciphering and enciphering messages to protect data) for more than two decades, long before cyberattacks became everyday news. Now his services are in great demand.
+Tsudik’s group, for instance, works with U.S. government agencies that need to share confidential information – such as lists of suspected terrorists – to ensure that it doesn’t fall into the wrong hands.
+“Back in the late ’80s and early ’90s, Internet security wasn’t taken seriously,” he says. “It was viewed as rather worthless.”
+With the rise of botnets, worms and other woes, nobody’s scoffing anymore.
+
+
+
+
+ — Story by Kathryn Bold 
+
+
+
+More community »
+AlumniFriendsParentsLeadership CouncilNewsGive a gift
+
+More news and events »
+FeaturesIn the newsNoteworthy achievementsPress releasesVideo highlightsCalendar of 
+events
+
+
+
+
+Copyright Inquiries |
+   UCI Directory |
+   Intranet |
+   
+   
+ 
+  icswebmaster

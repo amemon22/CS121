@@ -1,0 +1,29 @@
+Parallel construction of quadtrees and quality triangulations
+
+			
+				Marshall Wayne Bern,
+David Eppstein,
+and Shang-Hua Teng
+				Int. J. Computational Geometry & Applications 9(6):517–532, Dec 1999
+				Tech. report 614, Massachusetts Inst. Tech., Lab. for Computer Science, 1994
+				Proc. 3rd Worksh. Algorithms and Data Structures (WADS 1993), Lecture Notes in Computer Science 709, Frank K. H. A. Dehne,
+Jörg-Rudiger Sack,
+Nicola Santoro,
+and Sue Whitesides, ed., Springer-Verlag, Aug 1993, pp. 188–199
+				Mathematical Reviews 94j:68291
+
+				Cited by:
+				Optimal parallel all-nearest-neighbors using the well-separated pair decompositionAlgorithms for dynamic closest pair and $n$-body potential fieldsA Delaunay based numerical method for three dimensions: generation, formulation, and partitionAn optimal algorithm for closest pair maintenanceDealing with higher dimensions: the well-separated pair decomposition and its applicationsAn optimal algorithm for approximate nearest neighbor searching in fixed dimensionsNearly linear time approximation schemes for Euclidean TSP and other geometric problemsProvably good partitioning and load balancing algorithms for parallel adaptive $N$-body simulationPolynomial time approximation schemes for Euclidean TSP and other geometric problemsGeometric searching in walkthrough animations with weak spanners in real timeSIFFEA: scalable integrated framework for finite element methodUnstructured mesh generation: Theory, practice, and perspectivesData generation for geometric algorithms on non-uniform distributionsNew Results on Geometric Spanners and Their ApplicationsEfficient expected-case algorithms for planar point locationParallel neighborhood modellingInteger-coordinate crystalline meshesIntroduction to integer-coordinate crystalline meshesClosest-point problems simplified on the RAMA polynomial time approximation scheme for the problem of interconnecting highwaysParallel Delaunay refinement: algorithms and analysesA time efficient Delaunay refinement algorithmOn the efficiency of nearest neighbor searching with data Clustered in lower dimensionsAn efficient point location method for visualization in Large unstructured gridsDynamic compressed hyperoctrees with application to the $N$-body problemA time-optimal Delaunay refinement algorithm in two dimensions
+
+				
+					[D. Eppstein publications]
+					[Citation database]
+					[Documents]
+				
+			
+
+			
+				Fano Experimental Web Server,
+				D. Eppstein,
+				School of Information & Computer Science,
+				UC Irvine

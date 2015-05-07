@@ -1,0 +1,763 @@
+Program 2
+
+Classes, Overloaded Operators, and Iterators
+
+
+ICS-33: Intermediate Programming
+
+
+
+
+
+
+
+
+
+Introduction
+This programming assignment is designed first to ensure that you know how to
+  write a simple (numeric-like) class that overloads many of the standard Python
+  operators by defining various double-underscore methods.
+It also ensures that you know how to write a class that implements iterators,
+  by defining an __iter__ method that returns an object that we/Python
+  can call __next__ on.
+Finally it ensure that you know how to write iterator decorators by using
+  special generators (similar to functions, but using yield instead of
+  return) in a module.
+
+There are three separate parts to this assignment.
+In the first part you will write a module defining a single, large numeric-like
+  class that overloads many operators (including those performing arithmetic
+  and relational comparisons).
+In the second part you will write a medium-size class, which defines various
+  methods, including some double-underscore methods and specifically by
+  defining an __iter__ method that returns an object that we/Python
+  can call __next__ on.
+In the third part you will write a module that defines various iterator
+  decorators implemented by generators: each iterator decorator has argument(s)
+  that are iterators and is itself used an iterator.
+
+You should download the 
+  program2 project folder and unzip it to produce
+  an Eclipse project with three modules.
+You will write classes in the first two modules, which can be tested in the
+  script and using the standard driver using the batch self-check files that
+  I supplied; you will write generators in the third module, which can also be
+  tested in the script and including the batch self-check file that I supplied.
+Eventually you will submit each of the three modules you write separately to
+  Checkmate.
+
+It is recommend that you work on this assignment in pairs, with someone in your
+  lab section.
+Try to find someone who lives near you, with similar programming skills,
+  and work habits/schedule: e.g., talk about whether you prefer to work
+  mornings, nights, or weekends; what kind of commitment you will make to submit
+  program early.
+
+
+Only one student should submit all parts of the the assignment, but both
+  students' UCInetID and name should appear in a comment at the top of
+  each submitted .py file.
+A special grading program reads this information.
+The format is a comment starting with Submitter and Partner (when
+  working with a partner), followed by a colon, followed by the student's UCInetID (in all lower-case), followed by the student's name in
+  parentheses (last name, comma, first name -capitalized appropriately).
+If you omit this information, or do not follow this exact form, it will require
+  extra work for us to grade your program, so we will deduct points.
+Note: if you are submitting by yourself, and do NOT have a partner, you
+  should OMIT the partner line and the "...certify" sentence.
+
+For example if Romeo Montague (whose UCInetID is romeo1) submitted a program
+  that he worked on with his partner Juliet Capulet (whose UCInetID is jcapulet)
+  the comment at the top of each .py file would appear as:
+# Submitter: romeo1(Montague, Romeo)
+# Partner  : jcapulet(Capulet, Juliet)
+# We certify that we worked cooperatively on this programming
+#   assignment, according to the rules for pair programming
+If you do not know what the terms cooperatively and/or
+  rules for pair programming mean, please read about
+  Pair Programming 
+  before starting this assignment.
+Please turn in each program as you finish it, so that I can more
+  accurately assess the progress of the class as a whole during this assignment.
+
+Print this document and carefully read it, marking any parts that contain
+  important detailed information that you find (for review before you turn in
+  the files).
+The code you write should be as compact and elegant as possible, using 
+  appropriate Python idioms.
+
+
+
+
+
+
+
+Problem #1: DictList Class (operators)
+Problem Summary:
+The DictList class represents a list of dict, with some
+  keys appearing in more than one dict: think of the later dicts
+  as representing updates to the earlier ones, but the earlier ones are still
+  remembered earlier in the list.
+For example, if we define either
+
+  d = DictList(dict(a=1,b=2,c=3), dict(c=13,d=14,e=15), dict(e=25,f=26,g=27))
+or 
+
+  d = DictList({'a':1, 'b':2, 'c':3}, {'c':13, 'd':14, 'e':15}, {'e':25, 'f':26, 'g':27})
+
+the key 'c' appears in the first and second dictionary; the key
+  'e' appears in the second and third dictionary.
+The other keys ('a', 'b', 'd', 'f', and 'g')
+  appear in only a single dictionary.
+In methods below, we will overload __getitem__ so that
+  d['c'] returns 13, because the last (highest index) dictionary
+  that contains 'c' as a key associates  with the value
+  13.
+
+
+Details
+Define a class named DictList in a module named
+  dictlist.py.
+
+Define an __init__ method that has one parameter: it matches 
+      one or more arguments, where each argument is expected to be a dictionary.
+    See the example above, which creates a DictList object with three
+      dictionaries.
+    
+    If there are no dictionaries or if any argument is not a dictionary, or if
+        any dictionary is empty, this method must raise an
+        AssertionError exception with an appropiate message.
+    For example, in my code writing DictList(1) raises 
+       AssertionError with the message
+       DictList.__init__: 1 is not a dictionary.
+    
+    If there are one or more dictionaries as arguments, store them in a
+       list in the same order: e.g., first argument dictionary
+       is stored at index 0..
+    
+    IMPORTANT: You must use the name self.dl (lower-case
+         D followed by L) to store the list constructed
+         from the argument dictionaries.
+    The name self.dl is used in some tests in the batch self-check file.
+    Store only this attribute: store no other self variables in
+      this class.
+
+Define a __len__ method that returns the number of distinct keys in
+      all the dictionaries in the DictList.
+    For example len(d) for
+
+  d = DictList({'a':1, 'b':2, 'c':3}, {'c':13, 'd':14, 'e':15}, {'e':25, 'f':26, 'g':27})
+    is 7, because there are seven distinct keys in d:
+    'a', 'b', 'c', 'd', 'e', 'f',
+    and 'g'.
+
+Define a __bool__ method that returns False if the
+      DictList object stores only one dictionary; it returns
+      True if it stores more than one dictionary.
+
+Define a __repr__ method that returns a string, which when
+      passed to eval returns a newly constructed DictList with
+      the same dictionary arguments the DictList object __repr__
+      was called on.
+    
+    The DictList example above, might (because the order of the
+     keys/values in each dictionary makes no difference) return the string.
+     "DictList({'a':1, 'c':3, 'b':2}, {'c':13, 'e':15, 'd':14}, {'g':27, 'f':26, 'e':25})"
+
+Define a __contains__ method so that in returns whether or
+      not its first argument is a key in any of the dictionaries in a
+      DictList; it returns True if such a key is in any
+      dictionary and False if such a key is not in any of the
+      dictionaries.
+    Do not create any new data structures; iterate through the data
+      structure returning the correctly value as quickly as possible.
+
+Define a __getitem__ method so that calling d[k] 
+      on DictList d returns the value associated with the
+      latest dictionary (the one with the highest index) in d's
+      list that has k as a key.
+    If the key is in no dictionaries in the list, this method
+       must raise the KeyError exception with an appropriate message.
+    For example, in the DictList
+
+  d = DictList({'a':1, 'b':2, 'c':3}, {'c':13, 'd':14, 'e':15}, {'e':25, 'f':26, 'g':27})
+    d['a'] returns 1
+         ('a' is only in the first dictionary)
+      d['d'] returns 14
+         ('d' is only in the second dictionary)
+      d['g'] returns 27
+         ('g' is only in the second dictionary)
+      d['c'] returns 13
+         ('c' appears in the first and second dictionary: it returns the
+           associated value from the second dictionary).
+      d['e'] returns 25
+         ('e' appears in the second and third dictionary: it returns the
+           associated value from the third dictionary).
+      d['x'] raises KeyError
+          ('x' appears in no dictionaries).
+    
+
+Define a __setitem__ method so that executing d[k] = v 
+      on DictList d works as follows:
+    if k is in at least one dictionary, then change
+           the association of k to v, only in the last dictionary
+           (highest index) in which k is a key;
+           the number of dictionaries in the list remains the same
+    if k is not in any dictionaries, then create a new
+          dictionary at the end of the list of dictionaries, with only
+          one item: associating k with v in that dictionary; the
+          number of dictionaries in the list increases by one.
+    
+    
+    For example, in the DictList d
+
+  d = DictList({'a':1, 'b':2, 'c':3}, {'c':13, 'd':14, 'e':15}, {'e':25, 'f':26, 'g':27})
+    if we wrote d['c'] = 'new' then only the dictionary in index 1 (the
+      last one/highest index with key 'c') would change 'c's to
+      associate with 'new'.
+    It would now be
+  DictList({'a':1, 'b'2, 'c':3}, {'c':'new', 'd':14, 'e':15}, {'e':25, 'f':26, 'g':27})
+    
+    In the example above, if we instead wrote d['x'] = 'new' then a new
+      dictionary would be appended to the list (with 'x' associated with
+      'new' in that dictionary).
+    It would now be
+  DictList({'a':1,'b':2,'c':3},{'c':13,'d':14,'e':15},{'e':25,'f':26,'g':27},{'x':'new'})
+
+
+Define a __delitem__ method so that executing del d[k] 
+      on DictList d works as follows:
+    if k is in at least one dictionary, then delete
+           the key k only in the last dictionary (highest index) in
+           which k is a key; if that dictionary becomes empty, remove
+           it from the list (the number of dictionaries in the list decreases
+           by one).
+    if k is not in any dictionaries, then raise a
+          KeyError exception with an appropriate message.
+    
+    
+    For example, in the DictList d
+
+  d = DictList({'a':1, 'b':2, 'c':3}, {'c':13, 'd':14, 'e':15}, {'e':25, 'f':26, 'g':27})
+    if we wrote del d['c'] then only the dictionary in index 1 (the
+      last one/highest index with key 'c') would delete 'c' from
+      its keys.
+    It would now be
+  DictList({'a':1, 'b'2, 'c':3}, {'d':14, 'e':15}, {'e':25, 'f':26, 'g':27})
+    
+    In the example above, if we instead wrote del d['x'] then Python
+      would raise a KeyError exceptiohn.
+
+Define ae __call__ method so that calling d(k)
+      on DictList d returns a list of 2-tuples: the list index
+      for every dictionary in which k is a key and its associated value
+      in that dictionary.
+    If the key is in no dictionaries in the list, it returns [].
+    In the example above
+    d('a') returns [(0, 1)]
+               (it is only in the list's index-0 dictionary, with an
+                associated value of 1)
+      
+      d('e') returns [(1, 15), (2, 25)]
+               (it is in the list's index-1 dictionary, with an
+                associated value of 15 and 
+                it is in the list's index-2 dictionary, with an
+                associated value of 25)
+      
+      d('x') returns []
+               (it is in no dictionaries)
+    
+    
+    Note that the indexes that appear first in the the 2-tuple must be
+      increasing: for d('e') the uniquely correct answer is
+      [(1, 15), (2, 25)]; the following answer is wrong:
+      [(2, 25), (1, 15)].
+
+Define an __iter__ method so that it produces keys according to the
+    following rules.
+    Each key is produced only once, from the last (highest) index
+           dictionary in which it appears.
+      All the keys in each dictionary are produced in alphabetically sorted
+            order.
+    
+    
+    These requirements ensure that there is only one correct sequence of
+       values produced by the iterator.
+    For the DictList d
+
+  d = DictList(dict(a=1,b=2,c=3), dict(c=13,d=14,e=15), dict(e=25,f=26,g=27)
+  the values are produced in the order
+  'e', 'f', 'g', 'c', 'd', 'a', 'b'
+    Note that the keys 'e', 'f', and 'g' are produced
+      in alphabetical order from the index-2 dictionary; 
+    the keys 'c' and 'd' are produced in alphabetical order from
+       the index-1 dictionary (key 'e' has already been produced);
+    they keys 'a' and 'b' are produced in alphabetical order from
+       the index-0 dictionary (key 'c' has already been produced).
+
+Hints:
+Use a generator to write this method.
+  You may use another local data structure to ensure that you don't produce
+        the same key twice (given that the same key may appear in many
+        dictionaries in the list).
+
+
+Define an items method (taking no arguments) so that it produces
+      2-tuples (containing key-value pairs) according to the following rules.
+    Each key is produced only once, from the last (highest) index
+           dictionary in which it appears.
+      All the keys in each dictionary are produced in alphabetically sorted
+            order.
+    
+    
+    These requirements ensure that there is only one correct sequence of
+       values produced by the iterator.
+    For the DictList d
+
+  d = DictList(dict(a=1,b=2,c=3), dict(c=13,d=14,e=15), dict(e=25,f=26,g=27)
+  the values are produced in the order
+  ('e', 25), ('f', 26), ('g', 27), ('c', 13), ('d', 14), ('a', 1), ('b', 2)
+    Note that the keys 'e', 'f', and 'g' are produced
+      in alphabetical order from the index-2 dictionary; 
+    the keys 'c' and 'd' are produced in alphabetical order from
+       the index-1 dictionary (key 'e' has already been produced);
+    the keys 'a' and 'b' are produced in alphabetical order from
+    the index-0 dictionary (key 'c' has already been produced).
+
+Hints: See above (or just use the __iter__ method).
+
+Define a collapse method (taking no arguments) that returns a
+      dict that is equivalent to the DictList: it has the same
+      keys, and each key is associated with the value in the last dictionary
+      in which the key appears.
+    For the DictList d
+
+  d = DictList(dict(a=1,b=2,c=3), dict(c=13,d=14,e=15), dict(e=25,f=26,g=27)
+  d.collapse() would return
+    {'a':1, 'b':2,'c':13, 'd':14, 'e':25, 'f':26, 'g':27} 
+
+Define the == operator for comparing two DictLists or for
+      comparing a DictList and a dict for equality.
+    We define the meaning of d1 == d2 as follows:
+    The keys in the left operand are the same as the keys in the right
+          operand. Here, the keys in a DictList are all the keys
+          appearing in any of the its dictionaries; the keys in a dict
+          operand are all the keys in that dictionary (the standard meaning).
+    
+    and
+    
+    For all of the keys k computed above, d1[k] == d2[k].
+        [k] in a DictList is the value associated with k
+          in the latest dictionary (the one with the highest index in the list);
+        [k] in a dict is the value assocated with key k
+        (the standard meaning).
+    
+    
+    If the right operand is neither a DictList nor a dict, raise
+      the TypeError exception with an appropriate message.
+    
+    For example, if d1 = DictList(dict(a=1,b=2), dict(b=12,c=13)) and
+      d2 = DictList(dict(a=1,b=12), dict(c=13)) then
+      d1 == d2 is True:
+         both have keys a, b, and c; and, both have
+         ['a'] == 1, ['b'] == 12, and ['c'] == 13.
+    For the same reasons, d1 == dict(a=1,b=12,c=13) would also be
+          True.
+    
+    But d1 == dict(a=1,c=13) is False because the dict
+      operand has no 'b' key; and d1 == dict(a=1,b=2,c=13) is
+      False because the d1['b'] == 12 but the dict operand
+      associates 'b' with the value 2.
+
+  Hint: 
+  If you have implemented __getitem__ correctly (in part 7), use it
+    here.
+
+Define the < operator for comparing two DictLists or for
+      comparing a DictList and a dict for equality.
+    We define the meaning of d1 < d2 as follows:
+    The keys in the left operand are a strict subset of the keys in the
+          right operand. 
+        See above for the defintion of "keys".
+        Strict subset means there are fewer keys in the left operand than the
+          right operand (and every key in the left operand is also in the right
+          operand).
+    
+    and
+    
+    For all of the keys k in the left operand, d1[k] == d2[k].
+    
+    
+    If the right operand is neither a DictList nor a dict, raise
+      the TypeError exception with an appropriate message.
+    
+    For example, if d1 = DictList(dict(a=1,b=2), dict(b=12,c=13)) and
+      d2 = DictList(dict(a=1,b=12), dict(c=13,d=14) then
+      d1 < d2 is True:
+         d1's keys (a, b, and c) are a strict
+        subset of d2's keys (a, b, c, and d);
+        for d1's keys, all have the same associated values in d1
+          and d2.
+    
+    But dict(a=1,x=13) < d2  is False because the d2
+      operand has no 'x' key; and dict(a=1,b=2) < d2 is
+      False because the the dict operand associates 'b'
+      with the value 2 but d2['b'] == 12.
+
+Define the > operator for comparing two DictLists or for
+      comparing a DictList and a dict for equality.
+    For any DictLists and dicts, di and d2, 
+      d1 < d2 exactly when d2 > d1.
+    By defining both these operators, we can successfully compute expressions
+      involving dicts as the first operand, like {} < d1 and
+      {} > d1 and 
+
+Note that the law of trichotomy does not hold for DictLists:
+  one can have two DictLists where the first is not less than, equal
+  to, or greater than the second.
+
+Define adding two DictLists and adding a DictList and a
+      dict as follows.
+
+    To add two DictLists, create a new DictList with a
+        list of dictionaries that contains a copy of all the
+         dicts in the left DictList operand (in order) followed
+          by a copy of all the dicts in the right DictList
+          operand (in order).
+        
+        For example, if d1 = DictList(dict(a=1,b=2), dict(b=12,c=13)) and
+          d2 = DictList(dict(a='one',b='two'), dict(b='twelve',c='thirteen'))  then
+        d1+d2 would be equivalent to 
+  DictList({'a': 1, 'b': 2}, {'b': 12, 'c': 13}, {'a': 'one', 'b': 'two'}, {'b': 'twelve', 'c': 'thirteen'})
+        and d2+d1 would be equivalent to
+  DictList({'a': 'one', 'b': 'two'}, {'b': 'twelve', 'c': 'thirteen'}, {'a': 1, 'b': 2}, {'b': 12, 'c': 13})
+        So addition is not commutative for the DictList class:
+          d1+d2 produces a different result than d2+d1.
+        
+        Note the use of copy in the specifications above: changing an
+          argument dictionary after + should not affect the resulting
+          dictionary.
+        For example, if we declare d1 and d2 as above, and compute
+        d = d1+d2 and then write d1['c'] = 'new' nothing is
+        changed in d.
+     
+    To add DictList + dict, create a new DictList with a
+        list of dictionaries that contains a copy of all the
+         dicts in the DictList operand (in order) followed by a
+         copy of the dict operand.
+        
+        For example, if adl = DictList(dict(a=1,b=2), dict(b=12,c=13)) and
+          adict = dict(a='one',b='two')  then
+        adl+adict would return the equivalent to 
+  DictList({'a': 1, 'b': 2}, {'b': 12, 'c': 13}, {'a': 'one', 'b': 'two'})
+     
+     To add dict + DictList, create a new DictList with a
+         list of dictionaries that contains a copy of dict operand
+         followed a copy of all the dicts in the DictList
+         operand (in order).
+         
+         For example, if adl = DictList(dict(a=1,b=2), dict(b=12,c=13)) and
+         adict = dict(x='anx',b='two')  then
+        adict+adl would be return the equivalent to 
+  DictList({'x': 'anx', 'b': 'two'}, {'a': 1, 'b': 2, {'b': 12, 'c': 13})
+    
+    
+    If the right operand isn't a a DictList or a dict, raise
+      TypeError with an appropriate message.
+
+Define a __setattr__ method that ensures objects in the
+      DictList class cannot store new attributes: they store
+      only dl.
+    The methods you will write should never bind any instance names
+       (except in  __init__, which initializes dl) but
+       exclusively returns newly constructed DictList objects with the
+       correct values.
+    If an attempt is made to add new attributes to an object (by defining a new
+      attribute or rebinding an existing attribute), raise an
+      AssertionError with an appropriate message.
+    
+    Do not attempt to solve this part of the problem until all other parts
+      are working correctly.
+    If you fail to solve this part correctly comment out this method so that
+      the other batch self-check tests pass.
+
+You may define other (helper) Python methods in this class, but you do not
+      have to define any.
+
+
+
+Testing
+The dictlist.py module includes a script that does some simple
+  DictList manipulations and then calls driver.driver().
+The project folder contains a bsc1.txt file (examine it) to use for
+   batch-self-checking your class.
+These are rigorous but not exhaustive tests.
+Incrementally write and test your class: writing some methods may create a
+  pattern you can reuse for the others.
+
+Note that when exceptions are raised, they are printed by the driver but the 
+  Command: prompt sometimes appears misplaced.
+
+You can also test code you type into the driver as illustrated below; but if you
+  want to perform the same test over and over again when debugging, it is
+  better to put this code in the script before the driver is called.
+Notice the default for each command (printed in the square brackets) is the
+  command previously entered.
+  Driver started
+  Command[!]: from dictlist import DictList
+  Command[from dictlist import DictList]: d = DictList(dict(a=1,b=2), dict(b=12,c=13))
+  Command[d = DictList(dict(a=1,b=2), dict(b=12,c=13))]: print(d)
+  DictList({'b': 2, 'a': 1}, {'c': 13, 'b': 12})
+  Command[print(d)]: print(d['b'])
+  12
+  Command[print(d['b'])]: print(d('b'))
+  [(0, 2), (1, 12)]
+  Command[print(d('b'))]: print(d.collapse())
+  {'c': 13, 'b': 12, 'a': 1}
+  Command[print(d.collapse())]: print( (d+dict(b=22)).collapse() )
+  {'c': 13, 'b': 22, 'a': 1}
+  Command[print( (d+dict(b=22)).collapse() )]: quit
+  Driver stopped
+
+
+
+
+
+
+
+Problem #2: Bag Class (iterators)
+Problem Summary:
+Write a class that represents and defines methods, operators, and an iterator
+  for the Bag class.
+Bags are similar to sets, and have similar operations (of which we will
+  implement just the most important) but unlike sets they can store multiple
+  copies of items.
+We will store the information in bags as dictionaries (I suggest using a 
+   defaultdict) whose elements are keys whose associated values are the
+   number of times the key  occurs in the bag.
+You must store Bags using this data type as specified
+Details
+Define a class named Bag in a module named bag.py
+
+Define an __init__ method that has one parameter, an iterable of
+       values that initalize the bag.
+    Writing Bag() constructs an empty bag.
+    Writing Bag(['d','a','b','d','c','b','d']) construct a bag with
+      one 'a', two 'b's, one 'c', and three 'd's.
+
+Define a __repr__ method that returns a string, which when passed to
+       eval returns a newly constructed bag with the same value
+       (==) to the object __repr__ was called on.
+    For example, for the Bag in the discussion of __init__ the
+        __repr__ method would print its result as
+       Bag(['a', 'c', 'b', 'b', 'd', 'd', 'd']).
+    Bags like sets are not sorted, so these 7 values can appear in any order.
+    We might require that information in the list is sorted, but not all values
+      we might put in a bag may be ordered (and therefore not sortable): e.g.,
+      a bag storing both string and int values, Bag(['a',1]) which is
+      allowed.
+    
+    Note: This method is used to test several other methods/operators
+       in the batch self-check file; so it is critical to write it correctly.
+
+Define a __str__ method that returns a string that more compactly
+      shows a bag.
+    For example, for the Bag in the discussion of __init__ the
+        __str__ method would print its result as
+       Bag(a[1], c[1], b[2], d[3]).
+    Bags like sets are not sorted, so these 7 values can appear in any order.
+
+Define a __len__ method that returns the total number of values in
+      the Bag.
+    For example, for the Bag in the discussion of __init__ the
+        __len__ method would return 7.
+
+Define a unique method that returns the number of different
+      (unique) values in the Bag.
+    For example, for the Bag in the discussion of __init__ the
+        unique method would return 4, because there are four
+        different values in the Bag; contrast this method with
+        __len__.
+      
+Define a __contains__ method that returns whether or not its
+      argument is in the Bag (one or more times).
+
+Define a count method that returns the number of times its argument
+      is in the Bag: 0 if the argument is not in the Bag.
+
+Define an add method that adds its argument to the Bag: if
+      that value is already in the Bag, its count is incremented by
+      1; if it is not already in the Bag, it is added to the
+      Bag with a count of 1.
+
+Define an __add__ method that unions its two Bag operands:
+      it returns a new Bag with all the values in Bag operands.
+    For example: str(Bag(['a','b'] + Bag(['b','c'])) should be
+      'Bag(a[1],b[2],c[1])'
+    Neither Bag operand should change.
+
+Define a remove method that removes its argument from the
+      Bag: if that value is already in the Bag, its count is
+      decremented by 1 (and if the count reduces to 0, the value
+      is removed from the dictionary; if it is not in the Bag, raise a
+      ValueError exception, with an appropriate message that includes
+      the value that could not be removed.
+
+Define __eq__/__ne__ methods that return whether one
+      Bag is equal/not equal to another: contains the same values the
+      same number of times.
+    A Bag is not equal to anything whose type is not a Bag
+    This this method should not change either Bag.
+
+Define an __iter__ method that that returns an object on which
+      next can be called to produce every value in the Bag: all
+      len of them.
+    For example, for the Bag in the discussion of __init__, 
+      the following code
+  for i in x:
+      print(i,end='')
+would print
+  acbbddd
+    Bags like sets are not sorted, so these 7 values can appear in any order.
+
+Ensure that the iterator produces those values in the Bag at the time
+      the iterator starts executing; so mutating the Bag during
+      iteration will not affect what values it produces.
+
+    Hint: Write this method as a generator (covered in Friday's lecture
+      in Week 4).
+
+I have shown only examples of Bags storing strings, because they are
+  convenient to write.
+But bags can store any type of data.
+The __repr__, __str__, and __iter__/__next__ methods must
+  be written independently: neither should call the other to get things done.
+
+Testing
+The bag.py module includes a script that calls driver.driver().
+The project folder contains a bsc2.txt file (examine it) to use for
+   batch-self-checking your class.
+These are rigorous but not exhaustive tests.
+Incrementally write and test your class; check each method as you write it.
+
+Note that when exceptions are raised, they are printed by the driver but the 
+  Command: prompt sometimes appears misplaced.
+
+You can write other code at the bottom of your bag.py module to test the
+  Bag class, or type code into the driver as illustrated below.
+Notice the default for each command is the command previously entered.
+  Driver started
+  Command[!]: from bag import Bag
+  Command[from bag import Bag]: b = Bag(['d','a','b','d','c','b','d'])
+  Command[b = Bag(['d','a','b','d','c','b','d'])]: print(b)
+  Bag(a[1], b[2], c[1], d[3])
+  Command[len(b)]: print(len(b))
+  7
+  Command[print(len(b))]: print(b.count('d'))
+  3
+  Command[print(b.count('d'))]: quit
+  Driver stopped
+
+
+
+
+
+
+
+Problem #3: Module of Decorators (iterators)
+Problem Summary:
+Write the following iterator decorators (iterators that operate on iterators)
+  using Python generators.
+Write each generator to be self contained, not calling any other generators
+  fuctions or generators and do not use anything in the
+  itertools.py module (or any other module that would trivialize this
+  code); also, you may not call the zip generator, but you 
+  may call the enumerate generator.
+
+Note that the argument passed to these generators can be anything that we can
+  iterate over: that includes strings, lists, tuples, dictionaries, and other
+  generators: so, for example, you cannot compute the len of the
+  parameter because although strings, lists, tuples, and dictionariess have
+  simple methods to compute lengths, generators don't.
+
+Define space-efficient generators.
+They should not create temporary/local lists or tuples containing all the
+  values produced by their iterable parameters, but in alternate it is
+  allowable to create a list/tuple whose length is the number of arguments
+  passed to the generator, to manipulate the iterables.
+
+Some of these generators are written with explicit calls to iter and
+  next, others are implemented using simpler for loops.
+Each can be written in about a half-dozen lines.
+running_count takes any iterable and any predicate function
+      (taking one argument and returning a bool value): it produces a
+      running count of how many values up to (and including) the one just
+      iterated over, satisfied the predicate.
+   For example
+  for i in count('bananastand', lambda x : x in 'aeiou'): # is vowel
+    print(i,end=' ')
+   produces the values 0, 1, 1, 2, 2,
+      3, 3, 3, 4, 4, and 4.
+
+once_in_a_row takes any iterable: it produces a every value in the
+      iterable, but does not produce the same value twice in a row: if the
+      current value is the same as the last one yielded, it skips yielding the
+      current value.
+   For example
+  for i in once_in_a_row('abbcccaadd'):
+    print(i,end=' ')
+   produces the values 'a', 'b', 'c', 'a', and
+     'd'.
+
+group takes any iterable, and an int n (whose default value
+      is 1): it produces lists of n values: the first
+      n values from the iterable, then the second n values,
+       etc. until there are fewer than n values to put in the returned
+       list.
+  for i group('abcdefg',3):
+    print(i,end=' ')
+   produces the values ['a','b','c'] and ['d','e','f'].
+
+overlap takes any iterable, an int n, and an int m
+      (whose default value is 1): it produces lists of n
+      values: the first list contains the first n values;
+      every subsequent list drops the first m from the previous
+      list and adds the next m values from the iterator,
+      until there are fewer than n values to put in the returned
+       list.
+  for i overlap('abcdefghijk',4,2):
+    print(i,end=' ')
+    produces the values ['a','b','c','d'], ['c','d','e','f'], 
+    ['e','f','g','h'], and ['g','h',i','j'].
+    
+    Note that group(...,n) is equivalent to overlap(...,n,n)
+    (but still write group, as a simpler generator).
+
+sequence takes any number of iterables as parameters: it produces
+     all the values in the first iterable, followed by all in the second, ... ,
+     all values in the last iterable. For example
+  for i in sequence('abcd','ef','ghij'):
+      print(i,end='')
+     produces the values 'a', 'b', 'c', 'd',
+     'e', 'f', 'g', 'h', 'i', and 'j'.
+
+alternate takes any number of iterables as parameters: it produces
+     the first value from the first parameter, then the first value from the
+     second parameter, ..., then the first value from the last parameter;
+     then the second value from the first parameter, then the second value from
+     the the second parameter, ..., then the second value from the last
+     parameter; etc. If any iterable produces no more values, this generator
+     produces no more values.
+  for i in alternate('abcde','fg','hijk'):
+      print(i,end='')
+     produces the values 'a', 'f', 'h', 'b',
+     'g', 'i', and 'c'.
+
+
+Testing
+The generator.py module includes a script that runs various tests (in a
+  form better for debugging) and finally calls driver.driver().
+The project folder contains a bsc3.txt file (examine it) to use for
+   batch-self-checking your class.
+These are rigorous but not exhaustive tests.
+Incrementally write and test your class; check each generator as you write it.

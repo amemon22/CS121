@@ -1,0 +1,23 @@
+Exact algorithms for NP-hard problems: A survey
+
+			
+				Gerhard J. Woeginger
+				Proc. 5th Int. Worksh. Combinatorial Optimization – Eureka, You Shrink, Lecture Notes in Computer Science 2570, Michael Jünger,
+Gerhard Reinelt,
+and Giovanni Rinaldi, ed., Springer-Verlag, 2003, pp. 185–207
+
+				Cites:
+				3-coloring in time $O(1.3446^n)$: a no-MIS algorithmSmall maximal independent sets and faster exact graph coloringImproved algorithms for 3-coloring, 3-edge-coloring, and constraint satisfaction
+
+				
+					[D. Eppstein publications]
+					[Citation database]
+					[Documents]
+				
+			
+
+			
+				Fano Experimental Web Server,
+				D. Eppstein,
+				School of Information & Computer Science,
+				UC Irvine

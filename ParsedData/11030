@@ -1,0 +1,135 @@
+Project Guidelines
+  CS 277, Data Mining, Winter 2014
+  The
+goal of your project is to give you hands-on experience of applying
+data mining techniques to one or more large data sets, going through
+the following steps:
+  
+    identifying a data 
+      set and problem domain
+    deciding on what you want to achieve with data mining 
+    choosing 
+      appropriate methods and algorithms
+    implementing and testing your methods 
+    evaluating 
+      your techniques on your data sets 
+    reporting 
+      conclusions  
+  
+  Here are the
+  project deliverables and due dates:
+  Project DeliverableDue Date
+          1. Project Proposal
+        
+          Written proposal, due in class, Monday Jan 27th
+        
+          2. Progress Report 1
+        
+          Written report, due in class Monday February 10th. Also submit electronic copy to EEE.
+        
+          3. Progress Report 2
+        
+          Written report, due in class Wednesday February 26th. Also submit electronic copy to EEE.
+        
+          5. Final Project 
+            Report
+        
+          Submit to EEE dropbox, by 8am Monday March 17th
+        
+  
+  Data Sets:
+You are strongly encouraged to use a data set from one of the Web sites
+listed below. If there is a different data set that you would prefer to
+use, please email me to request permission - it should be a large data
+set for a problem area that you know something about or are interested
+in learning about. Note that most data sets from the UCI Machine
+Learning Repository are too small and too simple for a CS 277 project
+  
+    
+    One or more of several well-known text categorization data sets (text with labels)All or part of Wikipedia (Web pages, with links and category labels and other metadata)The Million Song data set with audio features and metadata for 1 million songs (music recommendation data)Several million US patents from 1980 to 2012 (text, metadata, time-series)Several million US trademark applications from 1870 to 2012 (text, metadata, time-series)MIMIC II data set for intensive care patients (time-series, metadata)Google syntactic ngrams over time (text, time-series)Global Event Data Set
+with 250 million georeferenced events from 1979 to the present
+(spatial, temporal, relational data of political events worldwide)Any of the larger network data set available on the Stanford SNAP site  (relational network data, temporal, spatial) Microsoft Learning-to-Rank data sets (search engine result ranking for 30k queries)
+  It
+is fine (and even encouraged!) to combine any of the data sets above
+with 1 or more other data sets (e.g., data sets not listed above) that are of interest to you - for example, an
+interesting project would be to see if you can use information from Wikipedia
+to improve a text classification algorithm.Note that you are not allowed
+to work on a data set you have worked with (or are working with)
+outside this class (e.g., for a different class project, for research,
+etc.) unless you obtain approval from me first (by explaining why this
+data is not being "double-counted" for other purposes). 
+  
+  
+  Types of Projects:
+    Here are some typical types of projects::
+  
+    Focus
+on the data and a particular task (e.g., prediction, clustering) and
+use multiple different algorithms from the literature to address this
+task. The focus here might be more on the data set and the task, than
+on the algorithms.
+    Focus on the algorithms: compare one
+or more baseline algorithms with a new recently-published algorithm -
+the focus here might be to see if the new algorithm really works as
+well as described in the paper where it is published
+    Develop
+a new algorithm/method and implement it and apply it to a task and data
+set - its important here to evaluate how your approach compares to
+existing baseline methods (at least one).
+    Another
+example
+would be to take a well-known technique (such as logistic regression or
+SVD decomposition) and carefully evaluate and compare a variety of
+different ways for fitting such models to data, evaluating perhaps on
+multiple data sets rather than just on one. (This might require using
+more data sets than those I have listed above - but you should try to
+include at least 1 of the data sets above if you can).
+      
+Note
+that a critically important part of any project is that you conduct
+careful empirical evaluations (for example by using appropriate
+train/test
+partitions) of different approaches. Also note that your project grade
+will not necessaily be correlated with the accuracy of your results:
+for example, a project developing a classification algorithm that
+achieves high accuracy on some classification task could receive a low
+score if you do not provide any insight into why the algorithm did
+well. Conversely, a project on classification with relatively low
+accuracies could get a very high score if you can provide insight and
+understanding into why the accuracies are not high.
+  
+  
+  Software:
+You must use either R, or Python, or Matlab as the primary environment
+for your project. You can call other code from within these
+environments, or use other code in your pipeline, but at a minimum for
+data visualization and analysis of model results you must use one of
+these 3 environments. You
+can use any library functions, toolboxes, publicly-available code, as
+long as you clearly indicate this in your reports. You are of course
+also encouraged to write your own
+custom software. A typical project might involve a "pipeline" of data
+anlaysis/processing steps, some of which you write yourself and others
+where you use existing software.  Teaming:
+  Students
+can work on projects individually, or in teams of 2 or 3 people. For
+multi-person teams, I will expect to see the work of 2 or 3 people, so
+you will need to think clearly about who will do what on the project,
+and how to make sure that your project has enough work to justify
+having 2 or 3 people work on it. For 2 or 3 person teams, your progress
+report and final report will be a single report, consisting of one
+common section for the project and then a seperate section briefly
+describing the work of each individual team member on the project.
+Grades will be assigned individually (2 people on the same project
+might get different grades depending on their contributions) - but
+clearly they will be correlated with the overall quality of the
+project. So you should think carefully (and choose partners carefully!)
+before signing up for a team project.
+  
+  Progress Report and Final Report:
+  More details will be provided closer to the dates that these are due. Your reports should be clearly written and comprehensive. Your final project 
+  report should be of the quality that is at the level of a conference or workshop paper. The following outline from Professor Ray Mooney on a possible project report format may be helpful.
+ 
+ 
+   
+   

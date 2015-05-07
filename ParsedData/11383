@@ -1,0 +1,77 @@
+IWIA'99 Technical Program
+Maui HPCC, Hawaii
+Monday
+November 1st, 1999
+8:45Breakfast and registration
+9:30Opening and discussion of data-intensive computations
+10:00Applications"DSP algorithms and PIM architecture"Douglas L. Jones (University of Illinois at Urbana-Champaign)
+
+
+"On the Parallelization of Dynamic Multilevlel Fast Multipole Method on Distributed Memory Computers"Sanjay Velamparambil, Jiming Song, and Weng Cho Chew (Center for Computational Electromagnetics, University of Illinois at Urbana-Champaign)
+
+
+
+
+
+
+11:00Discussion
+11:45Lunch
+1:15High-Performance Processors"Selective Guarded Execution Using Profiling on a Dynamically Scheduled Processor"Srinivas Mantripragada (SGI) and Alexandru Nicolau (UC Irvine) 
+
+
+"Near Fine Grain Parallel Processing Using Static Scheduling on Single Chip Multiprocessors"Keiji Kimura, Hironori Kasahara (Waseda U)
+
+
+
+
+2:00Discussion 
+2:30Break
+2:45Novel Parallel Architectures"PIM Architectures to Support Petaflops Level Computation in the HTMT Machine"Peter M. Kogge, Univ. of Notre Dame
+
+
+"SCIMA: A Novel Architecture for High Performance Computing" Hiroshi Nakamura+, Hideki Okawara+, Taisuke Boku*, Masaaki Kondo*, Shuichi Sakai'+ Research Center for Advanced Science and Technology, The University of Tokyo
+* Institute of Information Sciences and Electronics, University of Tsukuba
+' Department of Electrical Engineering, The University of Tokyo
+
+
+
+
+
+
+3:30Coffee Break
+4:00Discussion 
+ 
+Tuesday
+November 2nd, 1999
+9:00Breakfast
+9:30Networks of Workstations"Evaluation of Compiler-Assisted Software DSM Schemes for a Workstation Cluster"Junpei Niwa, Tatsushi Inagaki, Takashi Matsumoto, Kei Hiraki (U. of Tokyo)
+
+
+"RHiNET: A network for high performance parallel computing using locally distributed computers"Tomohiro Kudoh, Junji Yamamoto, Hiroaki Nishi (RWCP), Osamu Tanabe (ETL)
+
+
+
+
+10:00Discussion
+10:30Distributed Computation"Producer-consumer Pipelining for Fine-grain Non-strict Structure-data in Non-strict Dataflow Languages"Kentaro Inenaga*, Shigeru Kusakabe+, Makoto Amamiya** Department of Intelligent Systems
++ Department of Computer Science and Communication EngineeringKyushu University
+
+
+
+
+
+
+"Laurasia: A compiler-controlled COMA runtime environment for Network of Workstations"Tetsutaro UEHARA(*), Shoichi SAITO(*), Kazuki JOE(+), Yoshitoshi KUNIEDA(*)* Wakayama University
++ Nara Women's University
+
+
+
+
+
+
+ 
+11:30Discussion
+12:00Lunch
+ 
+1:15TBD
+ 

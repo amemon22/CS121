@@ -1,0 +1,58 @@
+Biomorphic Computing
+
+Winter 2004
+
+Professor: Bill
+Tomlinson
+
+Tuesdays 2:00-4:50pm
+
+Location: ICS 189
+
+Assignment 1
+
+Please read the following short paper:
+
+http://ddi.cs.uni-potsdam.de/HyFISCH/Produzieren/lis_projekt/proj_gamelife/ConwayScientificAmerican.htm
+
+and implement John Conway’s Game
+of Life.  You are encouraged (but not required) to use the following Java
+source code, which has a grid world and a number of useful methods already
+written for you.
+
+http://www.ics.uci.edu/~wmt/courses/BiomoW04/GameOfLife.java
+
+†
+
+If you use this file, please insert your code at ~line 112. 
+It should not be necessary to add any code outside this method, although you
+are welcome to alter and add to the rest of the code as you see fit.  Note: In
+Eclipse, please set Run->Run…Parameters to Width = 500, Height = 540 for
+best viewing.
+
+†
+
+Please comment all code that you add so that it is clear
+what each section is doing.  
+
+†
+
+Please email wmt@uci.edu if you have any questions.
+
+†
+
+Please email the entire file to wmt@uci.edu by Monday,
+1/19/04 at noon.
+
+†
+
+Note: If you’d like a bigger challenge (not required),
+please adapt the code so that it uses the Von Neumann Neighborhood (see: http://mathworld.wolfram.com/vonNeumannNeighborhood.html
+
+for more information) of range 1, 2 or 3 rather than the
+Moore Neighborhood that it currently uses, and consider the impact of this
+change on Conway’s genetic laws.
+
+†
+
+†

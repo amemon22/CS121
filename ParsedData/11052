@@ -1,0 +1,87 @@
+Biomorphic Computing
+
+Winter
+2004
+
+Professor:
+Bill Tomlinson
+
+Tuesdays
+2:00-4:50pm
+
+Location:
+ICS 189
+
+Assignment 2
+
+Implement a
+genetic algorithm to evolve a simple creature that lives on a two-dimensional
+world and is able to move to the location of a mouse click as rapidly as
+possible. This creature should have a fixed-length bitstring genome that is
+made up of all of the creature’s behavioral rules. Each rule should have a
+certain number of conditional bits that encode the sensory conditions under
+which the rule is appropriate, and a certain number of action bits that encode
+what the creature should do when this rule is chosen. The creature must execute
+exactly one rule per time step. No rule may cause a creature to move more than
+one unit in X and one unit in Y per time step, nor to turn more than 90 degrees
+per time step. A creature may not both move and turn in the same time step, and
+must always move in the direction it is facing.
+
+†
+
+The evolution of
+the creature should start from a randomly generated initial population, and
+should demonstrate both crossing over and mutation. The full evolutionary
+process should take no longer than approximately 1-2 minutes on a
+consumer-grade PC. Please use the following Java
+source code, which has a grid world and GA framework already written for you.
+
+http://www.ics.uci.edu/~wmt/courses/BiomoW04/GAFramework.zip
+
+Note: In Eclipse,
+set Run->Run…Parameters to Width = 500, Height = 500 for best viewing.
+
+†
+
+There are five
+incomplete methods where it is necessary to add code:
+
+Evolver.generateNewPopulation();
+//please encode the process by which each successive generation is derived from
+the one that precedes it.
+
+Creature.sense();//please
+encode the process by which the creature’s sensory apparatus detects the target
+(e.g., the mouse click).
+
+Creature.chooseAction();//please
+encode the process by which a rule is chosen based on how well its conditional
+bits match what it sensed in Creature.sense().
+
+Creature.takeAction();//once
+a rule has been chosen, this method shows how that rule is interpreted to
+affect the position or forward vector of the creature.
+
+TestWorld.testFitness();
+//this method determines the fitness function by which the creatures are
+evaluated.
+
+†
+
+In addition to the
+above methods, it will probably be necessary for you to add other methods and
+fields to the code in order for it to work well. Please comment all code that
+you add so that it is clear what each section is doing. 
+
+†
+
+Please email
+wmt@uci.edu if you have any questions, and email an entire set of compiling
+files to wmt@uci.edu by Monday, 2/2/04 at 5pm.
+
+†
+
+Note: If you’d
+like a bigger challenge, see how efficiently you can evolve an optimal
+creature, minimizing number of rules, number of bits per rule and total
+processing time.

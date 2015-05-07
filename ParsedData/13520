@@ -1,0 +1,29 @@
+Edge insertion for optimal triangulation
+
+			
+				Marshall Wayne Bern,
+Herbert Edelsbrunner,
+David Eppstein,
+Scott A. Mitchell,
+and Tiow-Seng Tan
+				Discrete & Computational Geometry 10(1):47–65, 1993
+				Proc. 1st Latin American Symp. Theoretical Informatics (LATIN 1992), Lecture Notes in Computer Science 583, Imre Simon, ed., Springer-Verlag, Apr 1992, pp. 46–60
+				Tech. report UILU-ENG-92-1702, Univ. of Illinois, Urbana-Champaign, Dept. of Computer Science, 1992
+				Mathematical Reviews 94i:68279
+				http://www.iscs.nus.sg/~tants/Paper/eis.ps.gz
+
+				Cited by:
+				Quality mesh generation in three dimensionsMesh generation with provable quality boundsApproximating the maxmin-angle covering triangulationOptimal Two-Dimensional TriangulationsApproaching the largest $\beta$-skeleton within a minimum weight triangulationBest-case results for nearest-neighbor learningOptimal triangulation problemsTriangulationsThe farthest point strategy for progressive image samplingFinding a covering triangulation whose maximum angle is provably smallSurface reconstruction by Voronoi filteringMesh generationOn levels of detail in terrainsGeneralized LMT-skeleton heuristics for several new classes of optimal triangulationsUnstructured mesh generation: Theory, practice, and perspectivesImage-consistent surface triangulationLMT-skeleton heuristics for several new classes of optimal triangulationsOptimal triangulationsOne strike against the min-max degree triangulation problem On computing new classes of optimal triangulations with angular constraintsGeometry and Topology for Mesh GenerationOn beta-skeleton as a subgraph of the minimum weight triangulationMulticriteria-optimized triangulationsAn algorithm for the maxmin area triangulation of a convex polygonNCSA MinMaxer: User's and Programmer's GuideGRASS Reference ManualConstrained higher order Delaunay triangulationsNP-completeness column 24
+
+				
+					[D. Eppstein publications]
+					[Citation database]
+					[Documents]
+				
+			
+
+			
+				Fano Experimental Web Server,
+				D. Eppstein,
+				School of Information & Computer Science,
+				UC Irvine

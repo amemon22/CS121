@@ -1,0 +1,42 @@
+David Eppstein - Publications
+
+
+
+Dihedral bounds for mesh generation in high dimensions.
+M. Bern,
+L.P. Chew,
+D. Eppstein, and
+J. Ruppert.
+892nd Meeting Amer. Math. Soc., Brooklyn, 1994.
+Abstract in Abs. Amer. Math. Soc. 15, 1994, p. 366.
+
+6th ACM-SIAM Symp. Discrete Algorithms,
+San Francisco, 1995, pp. 189-196.
+
+Any d-dimensional point set
+can be triangulated
+with O(nceil(d/2)) simplices, none of which has
+an obtuse
+dihedral angle.
+No bound depending only on n is possible 
+if we require the maximum dihedral angle to measure at most 
+90-epsilon degrees or the minimum dihedral to measure
+at least epsilon.  Includes a
+
+classification of simplices in terms of their bad angles.
+(BibTeX --
+SODA paper --
+Citations --
+CiteSeer)
+
+
+
+
+Publications --
+David Eppstein --
+Theory Group --
+Inf. & Comp. Sci. --
+UC Irvine
+
+Semi-automatically filtered
+from a common source file.

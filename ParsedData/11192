@@ -1,0 +1,54 @@
+Autonomous Characters
+
+Fall 2003
+
+Tuesdays 3:00-5:50pm
+
+Location: HIB335
+
+Directions for Running the Demo
+
+Note: These directions may not correspond exactly to the
+versions of software that you will be using. 
+Therefore, it is important that you follow the spirit of the directions,
+rather than the exact letter of them. 
+If you are having trouble, please ask any classmates who are nearby, or
+email me (wmt@uci.edu) and I will do my best
+to help.
+
+ 
+
+Make
+     sure you are logged in as ACE_<usernumber>, rather than as visitor.Make
+     sure you have compiled the demo. 
+     See the Directions for Compiling the Codebase to do that.Start
+     meny->run->Type “cmd” (which stands for “command”)Type
+     “c:” and hit return.Type
+     “cd c:/files/ACE/ACE_<usernumber>/code” to switch into your
+     directory (or whatever your directory is)(FIRST
+     TIME) -> right click menu bar of command window and choose
+     Properties.  Turn on options
+     ->quickedit mode, and change Layout tab -> screen buffer size height
+     to be 9999.  When asked, save
+     properties for future windows with the same title. (FIRST TIME) -> Type “notepad
+     runner.bat”(FIRST
+     TIME) -> Change lines 2 and 4 to point to your code and art
+     directories.(FIRST
+     TIME) -> Save and close it.Type
+     “runner” and press return.  Demo
+     should start.  If it does not,
+     track down the last thing that happened before it crashed, which is a good
+     place to start for debugging.Camera
+     steering is done using the arrow keys and page-up and page-down.  The main graphics screen must be the
+     top-most window in order for the camera controls to work.To
+     quit demo, bring the command window to the top and hit Ctrl-C twice.Try
+     using the runner with some command line options:“runner
+      –fullScreen”“runner
+      –numPeople 01 5” 
+      (this is in the format “-numPeople userNumber numberOfThatType”.)
+ Note:
+     hitting up-arrow in the command window will allow you to scroll through
+     the recent commands you’ve typed in. 
+     It’s useful for not having to type “runner” all the time.Note
+     2:  If you turn on the sound, they
+     should beep when they’re happy.

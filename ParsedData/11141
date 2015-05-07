@@ -1,0 +1,146 @@
+» Account
+
+    » New User Guide» Activation» Password Change/Reset» Quota» Renewal» Mapping Network Drive
+      » Windows» Mac» FAQs
+
+
+    » E-mail
+
+    » ICS Google Mail» Specify Delivery Point» Webmail» Thunderbird for ICS Gmail» Thunderbird» Mailing Lists» Forwarding/Vacation/Spam Settings» Email Servers Information» Checking Group Account Email
+
+
+    » Network
+
+    » UCInet Mobile» VPN» ICS Netreg» UCI Weather Report» Open Port Request
+
+
+    » Linux
+    
+    » ICS hosts» Changing shell» Using modules» Security» Group account access (gsu)» Sun Grid Engine
+
+
+    » Other Services
+
+    » Labs» Printing» Activate MS Office» Sophos
+      » Windows» Mac» MSDNAA» File Restore
+      » Self-restore snapshot» Restore request» Quarterly announcements   
+ 
+
+    » Web
+    
+    » Personal Webpage» General Information   
+
+
+    » Policies
+    
+    » Ethics» Ethics Summary
+
+
+    » Contact
+    
+    » Helpdesk» Support Staff» Who To Contact
+
+
+
+
+
+
+  
+MSDNAA FAQ
+
+
+
+
+What is the MSDNAA Program?Am I eligible to download MSDNAA software?
+          What software is available for download? What if I want a software that has not been made
+            available? How much does it cost to get the software? What can the software being provided be used for?
+          Do I have to uninstall the software once I
+            graduate or stop taking ICS courses?How can I obtain the software? Why is the size of the file I downloaded so
+            small or unexecutable? I am getting an error in the middle of my download,
+            what does it mean? How do I receive my login/password? What is an SDC file and why can't I open or unpack
+            it? How much hard disk space do I need? How can I reuse my product keys if I need to
+            reinstall my computer? 
+
+  Q: Am I eligible to download MSDNAA software?          
+ If you are enrolled in any course under the Bren School of ICS course
+          for credit, you are eligible to download the MSDNAA software.  Faculty,
+          instructors, and TAs are eligible to receive the software if you have
+          an active ICS account.
+ Q: What software is available for download?
+ Please login to the MSDNAA
+          page and look under the Software section for an updated listing.
+ Q: What if I want a software that
+        has not been made available?
+ If you need a particular software for a class or research project,
+          please email helpdesk with an explanation of why you need it and we will look into its availability.  NOTE: Microsoft Office is not included in the MSDN Academic Alliance
+          program. 
+ Q: How much do I need to pay for the software?
+ In an agreement with Microsoft, the MSDN Academic Alliance program
+          provides this software free of charge.  There is a small charge if you
+          choose to have the installation CD mailed to you.
+ Q: What can the software being provided be used for?
+ The software is provided for instructional and non-profit research purposes.  It cannot be used for infrastructure
+          or profit. 
+ Q: Do I have to uninstall the software once I graduate or once I am no
+          longer a student of the Bren School of ICS?
+ The license is perpetual.  This means that you do not need to uninstall
+          the software.  The software and product keys you have received are yours
+          to keep, but you will lose the ability to download the MSDNAA software once
+          your ICS account expires.
+ Q: How can I obtain the software?
+ You may download the software from the
+          MSDNAA website. 
+ Alternatively, the burner machine in CS 364 lab has the ISO images
+          of the software in the "MSDNAA Software" folder.  You can burn your own
+          CDs/DVDs to take home or bring a USB flash drive and transfer the ISO files you might need.  However, you will still need to login into 
+          MSDNAA site and "purchase" the software from their website
+          to get the necessary product keys. 
+Q: Why is the size of the file I downloaded so small or unexecutable?
+If you are downloading the MSDNAA software, the file that first gets
+          downloaded may not have the .exe file extension.  This has occurred when
+          Mozilla Firefox is used as the browser.  Add the .exe extension if necessary
+          and double-click the file.  It is a downloader file of a very small size
+          that is used to download an SDC file.  After the SDC file is downloaded,
+          the downloader is required to extract the actual software from it. 
+Q: I am getting an error in the middle
+        of my download, what does it mean?
+In many cases, you should be able to figure out what is wrong by the
+          content of the error code.  If it is not immediately obvious what you
+          should do, check the  Download Error Help
+          Page.  If you still cannot complete your download, please send an
+          email message to helpdesk.
+ Q: How do I receive my login/password?
+ Please user your ICS account username and password to login.
+ Q: What is an SDC file and why can't
+          I open or unpack it? 
+ When you double click the executable file that you downloaded from MSDNAA, it will ask you where to unpack the
+          file.  There will be an SDC file inside the folder you choose to store the downloaded file.  This is a zip file that the
+          Downloader executable will extract for you when the download is completed.  You need to use the Downloader to extract the
+          install files from the SDC file.  The SDC file is safe to delete after the setup files are extracted from it. 
+ Q: How much hard disk space do I need?
+Some files required at least 2GB of space for the SDC file that is downloaded plus
+          the files that are extracted from it.  If you do not have enough disk space for the SDC file and the extracted files, you
+          will need to download the file again in order to unzip the SDC file.  Make sure you have enough disk space before proceeding
+          to download. 
+ Q: How can I reuse product
+        keys issued to me if I need to reinstall my computer?
+ If you made a hardware change or got rid of your old computer and
+          need to reinstall software that needs to be activated, such as Windows 7, Visio, and Project, the first step is to try telephone registration
+          to speak to a Microsoft representative.  If you need to be reissued
+          new product keys because the telephone registration did not work, email
+          helpdesk and state your reasons for the request thoroughly. 
+
+
+
+
+
+
+Copyright Inquiries |
+   UCI Directory |
+   Intranet |
+   
+   
+ 
+  icswebmaster |
+Updated: 
+November 07 2013

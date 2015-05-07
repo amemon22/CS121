@@ -1,0 +1,42 @@
+Big arrays in C procedures 
+
+There is a not-very-huge number N such that,
+if a procedure declares a local integer array larger than N,
+
+you get a segmentation fault when the procedure is called. 
+The same holds for multiple arrays
+whose total space is equivalent. 
+Apparently whatever C
+uses for automatic variables cannot handle this
+magnitude of array on the stack of procedure calls. 
+I would suggest that you use one of the following methods:
+
+ Declare the large arrays as a local variable in one file,
+     and as a global variable in all procedures. 
+     This works, but I can see no advantage to it relative to
+     the following two methods.
+ Declare the arrays in the procedures as static. 
+     This retains locality of variables, and is quite simple. 
+     However, the (excessive) storage remains in existence even when
+     the procedures that use it are not executing.
+ Only declare (int **) variables,
+     and use calloc to get the required space when needed,
+     returning it when done.   This retains locality of
+     variables without wasting a large chunk of space when the
+     procedures that use the big arrays are not in use. 
+     There is an added bonus in that you can save much space
+     for each array by building triangular arrays,
+     which is not much harder than building square ones when using
+     C's pointer-vector system.
+
+
+
+
+
+
+Dan Hirschberg  
+Computer Science Department
+University of California, Irvine, CA 92697-3435
+
+dan (at) ics.uci.edu
+Last modified: Mar 22, 1999

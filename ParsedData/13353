@@ -1,0 +1,24 @@
+Planar orientations with low out-degree and compaction of adjacency matrices
+
+			
+				Marek Chrobak
+and David Eppstein
+				Theoretical Computer Science 86(2):243–266, Sep 1991
+				Mathematical Reviews 93a:68114
+				http://www.ics.uci.edu/~eppstein/pubs/ChrEpp-TCS-91.pdf
+
+				Cited by:
+				Efficient massively parallel Euler solver for two-dimensional unstructured gridsTwo-dimensional viscous flow computations on the Connection Machine: unstructured meshes, upwind schemes and massively parallel computationsFully dynamic output bounded single source shortest path problemSemidynamic algorithms for maintaining single-source shortest path treesFully dynamic shortest paths and negative cycles detection on digraphs with arbitrary arc weightsConnectivity of planar graphsFaster finding of simple cycles in planar graphs on a randomized EREW PRAMA simple linear time algorithm for embedding maximal planar graphsA note on improving the running time of a class of parallel algorithms using randomizationFully dynamic algorithms for maintaining shortest path treesWhat structural features make graph problems to have efficient parallel algorithms? Using outerplanar graphs, trapezoid graphs and in-tournament graphs as examplesLabeling schemes for flow and connectivityShort path queries in planar graphs in constant timeA new 3-color criterion for planar graphsFully dynamic shortest paths in digraphs with arbitrary arc weightsOptimal graph orientation with storage applicationsShort cycles in planar graphsSmall induced-universal graphs and compact implicit graph representationsBalanced vertex-orderings of graphs
+
+				
+					[D. Eppstein publications]
+					[Citation database]
+					[Documents]
+				
+			
+
+			
+				Fano Experimental Web Server,
+				D. Eppstein,
+				School of Information & Computer Science,
+				UC Irvine

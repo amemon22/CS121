@@ -1,0 +1,14 @@
+ICS 280, Fall 2000: Exponential Algorithms
+Lecture Schedule and Homework Assignments
+
+Week 1Sep. 26Why exponential algorithms?Sep. 28Constraint satisfaction problemsWeek 2Oct. 3Problem transformation and NP-completenessOct. 5Other standard NP-complete problems: maximum independent set
+and traveling salesman problemWeek 3Oct. 9Homework 1 due
+Oct. 10Generate and testOct. 12Randomized and derandomized generate and testWeek 4Oct. 17Backtracking: simple 2n 3-coloring
+algorithm; listing all maximal independent setsOct. 19Solving recurrences;
+enumeration of cases (proof by exhaustion)Week 5Oct. 23Homework 2 due
+Oct. 24Simple randomized (3,2)-CSP algorithm and its derandomizationOct. 26Feder and Motwani's randomized
+(k,2)-CSP algorithmWeek 6Oct. 31TSP: dynamic programming, comparison to branch and bound /
+polyhedral combinatorics approachNov. 2Dynamic programming for graph coloringWeek 7Nov. 7Mixing dynamic programming with backtrackingNov. 9Pathwidth and faster dynamic programming for special graph classesWeek 8Nov. 13Homework 3 due
+Nov. 14No class (away at
+FOCS 2000)Nov. 16Pathwidth and treewidth of planar graphsWeek 9Nov. 21Schöning's random-restart hill-climbing k-SAT algorithmNov. 23No class (thanksgiving)Week 10Nov. 28Quantum computation and
+quantum circuitsNov. 30Grover's algorithm for quantum generate-and-testFinalsWeekDec. 8Homework 4 due

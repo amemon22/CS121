@@ -1,0 +1,159 @@
+Compass and Straightedge
+
+I include here both pages about the classical Greek
+compass-and-straightedge style of construction,
+other topics involving Greek mathematicians such as
+Pythagoras and Euclid,
+as well as the three famous problems they found impossible
+to construct with these tools.
+
+Angle
+trisection, from the geometry forum archives.
+
+Animated proof
+of the Pythagorean theorem, M. D. Meyerson, US Naval Academy.
+
+Oliver
+Byrne's 1847 edition of Euclid, put online by UBC.
+"The first six books of the Elements of Euclid, in which coloured
+diagrams and symbols are used instead of letters for the greater ease of
+learners."
+
+Cinderella
+multiplatform Java system for compass-and-straightedge construction,
+dynamic geometry demonstrations and
+automatic theorem proving.
+Ulli Kortenkamp and Jürgen Richter-Gebert, ETH Zurich.
+
+Constructing a regular pentagon inscribed in a circle, by straightedge and compass.
+Scott Brodie.
+
+Equivalents of the parallel postulate.
+David Wilson quotes a book by George Martin, listing 26 axioms
+equivalent to Euclid's parallel postulate.
+See also Scott Brodie's proof of equivalence with the Pythagorean theorem.
+
+Euclid 3:16.
+Fun geometry T-shirt sighting, from Izzycat's blog.  I want one.
+
+
+Euclid's
+Elements, animated in Java by David Joyce. See also
+Ralph Abraham's
+extensively illustrated
+edition,
+and this
+manuscript excerpt from a copy in the Bodleian library made in the year 888.
+
+An
+extension of Napoleon's theorem.  Placing similar isosceles
+triangles on the sides of an affine-transformed regular polygon results
+in a figure where the triangle vertices lie on another regular polygon.
+Geometer's sketchpad animation by John Berglund.
+
+Gauss' tomb. The story that he asked
+for (and failed to get) a regular 17-gon carved on it leads to some
+discussion of 17-gon construction and perfectly scalene triangles.
+
+Greek mathematics and its modern heirs.
+Manuscripts of geometry texts by Euclid, Archimedes,
+and others, from the Vatican Library.
+
+Hippias'
+Quadratrix, a curve discovered around 420-430BC, can be used to
+solve the classical Greek problems of squaring the circle, trisecting
+angles, and doubling the cube.
+Also described in
+St.
+Andrews famous curves index,
+Xah's special curve index,
+Eric
+Weisstein's treasure trove, and
+H. Serras'
+quadratrix page.
+
+Jim Loy's
+geometry pages.  With special emphases on geometric constructions
+(and non-constructions such as angle
+trisection) as well as many nice
+Cinderella animations.
+
+Pi
+curve. Kevin Trinder squares the circle using its involute spiral.
+See also his quadrature
+based on the 3-4-5 triangle.
+
+PolyMultiForms.
+L. Zucca uses pinwheel tilers to dissect an illustration of the Pythagorean
+theorem into few congruent triangles.
+
+Proofs of the Pythagorean Theorem.
+
+Pythagoras' Haven.
+Java animation of Euclid's proof of the Pythagorean theorem.
+
+Pythagorean
+theorem by dissection,
+part II,
+and part III, Java Applets by A. Bogomolny.
+
+Quadrature.
+Michael Rack finds what appears to be an accurate numerical
+approximation to pi using compass and straightedge.
+
+Romain
+triangle theorem.
+An analogue of the Pythagorean theorem for triangles in which one angle
+is twice another.
+
+A small puzzle.
+Joe Fields asks whether a certain decomposition into L-shaped
+polyominoes provides a universal solution to dissections of pythagorean
+triples of squares.
+
+Squaring
+the circle. BNTR finds a pretty geometric visualization of Gregory's
+Series for pi/4.
+
+Straighten
+these curves.  This problem from Stan Wagon's
+PotW archive
+asks for a dissection of a circle minus three lunes into a rectangle.
+The ancient Greeks performed
+similar
+constructions
+for certain
+lunules
+as an approach to
+squaring the circle.
+
+Three classical geek problems solved!
+Hauke Reddmann, Hamburg.
+
+Trisecting
+an angle with origami. Julie Rehmeyer, MathTrek.
+
+Wonders of Ancient Greek Mathematics, T. Reluga.
+This term paper for a course on Greek science includes sections
+on the three classical problems, the Pythagorean theorem, the golden
+ratio, and the Archimedean spiral.
+
+Zef
+Damen Crop Circle Reconstructions.  What is the geometry underlying
+the construction of these large-scale patterns?
+
+
+
+
+From the Geometry Junkyard,
+computational
+and recreational geometry pointers.
+Send email if you
+know of an appropriate page not listed here.
+David Eppstein,
+Theory Group,
+ICS,
+UC Irvine.
+Semi-automatically
+filtered
+from a common source file.

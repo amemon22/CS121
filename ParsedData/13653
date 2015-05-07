@@ -1,0 +1,23 @@
+Mathematical Reviews 2000a:68153
+
+			
+				Linear complexity hexahedral mesh generation
+				David Eppstein
+				Computational Geometry Theory & Applications 12:3–16, 1999
+				Mathematical Reviews 2000a:68153, 2000
+				Reviewed by Luiz Henrique de Figueiredo
+
+				One important problem in mesh generation is how to extend a given mesh on the surface of a solid to its interior. Most results on such problems, especially theoretical ones, are restricted to the extension of triangular meshes to tetrahedral meshes. However, in practice, quadrilateral and hexahedral meshes are often preferred because of their numerical properties. Few theoretical results are known for this case. For planar meshes, it has been proved [S. Ramaswami, P. A. Ramos and G. T. Toussaint, Comput. Geom. 9 (1998), no. 4, 257--276; MR 98k:68169] that a polygon with $n$ sides can be meshed with convex quadrilaterals if and only if $n$ is even. Moreover, $O(n)$ Steiner points suffice as the vertices of the internal mesh, and they can be found efficiently. Thurston and Mitchell independently proved a similar result for spatial meshes, but it is restricted to solids whose boundaries are topological spheres. The resulting internal mesh is only topological, not geometric, in the sense that the hexahedral elements have curved boundaries and are not necessarily convex. Moreover, the size of the internal mesh is not linear in the size of the boundary mesh. In this paper, the author removes this restriction and proves that any polyhedron which is topologically a sphere and whose boundary is composed of an even number of quadrilateral faces can be meshed with a linear number of topological cubes. The author has made some progress in extending this proof to geometric meshes---only a finite number of cases are left to be tested, and this could be done by machine---but, as he points out, this extension would not be directly practical because the size of the interior mesh may be large, albeit linear, and its elements will be poorly shaped. 
+
+				
+					[D. Eppstein publications]
+					[Citation database]
+					[Reviews]
+				
+			
+
+			
+				Fano Experimental Web Server,
+				D. Eppstein,
+				School of Information & Computer Science,
+				UC Irvine

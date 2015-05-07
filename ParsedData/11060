@@ -1,0 +1,45 @@
+Biomorphic Computing
+
+Winter 2004
+
+Professor: Bill
+Tomlinson
+
+Tuesdays 2:00-4:50pm
+
+Location: ICS 189
+
+Assignment 3
+
+Please implement a
+flock of virtual creatures based on Craig Reynolds’s
+paper that we read for class on Feb. 3.  You are
+encouraged to use the following Java source code, which has a grid world and
+creature framework already written for you.
+
+http://www.ics.uci.edu/~wmt/courses/BiomoW04/Flock.zip
+
+Note: In Eclipse,
+set Run->Run…Parameters to Width = 500, Height = 500 for best viewing.
+
+†
+
+Most of the work
+will need to be done in the Creature.update() method.  You are also welcome to
+add methods and fields elsewhere as you see fit.
+
+†
+
+If you’d like a
+bigger challenge, use your genetic algorithm from Assignment 2 to evolve the
+rules by which the creatures flock.
+
+†
+
+Please email
+wmt@uci.edu if you have any questions, and email an entire set of compiling and
+well commented files to wmt@uci.edu by Monday, 2/9/04 at 5pm.
+
+†
+
+†

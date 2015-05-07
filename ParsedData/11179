@@ -1,0 +1,27 @@
+Autonomous Characters
+
+Fall 2003
+
+Tuesdays 3:00-5:50pm
+
+Location: HIB335
+
+Assignment 1
+
+Open
+     person.max.Save
+     it as personACE_<yourNumberHere>.max.Make
+     two animation cycles, one happy, one sad, that are a matched pair, each 20
+     frames long.  The happy animation
+     should start at frame 10 and end at frame 30, and those two poses should
+     stay the way they are in person.max. 
+     The sad animation should start at frame 40 and end at frame 60, and
+     those two poses should stay the way they are in person.max.Export
+     the two animations as dance_happy.iy and dance_sad.iy using the exporter
+     Maxscript.Email
+     both .iy files and the .max file that created them to wmt@uci.edu by 5pm
+     on October 7.
+
+ 
+
+Email wmt@uci.edu or if you have problems.

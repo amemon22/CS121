@@ -1,0 +1,119 @@
+CompSci 237 - Spring 2015: Distributed Systems
+  Middleware 
+  Prof. Nalini Venkatasubramanian
+  
+  
+  
+
+ 
+
+
+  
+  Announcements:
+  Please check this page frequently for important announcements
+  regarding course work -
+  IMPORTANT! 
+  Office Hours --Prof. Venkatasubramanian will be available
+  in her office (Bren Hall 2086) on Thursdays 11-12pm to discuss
+  class projects etc. 
+  
+  1st summary set (Middleware and Distributed Systems Fundamentals, Virtual Time and Global States in Distributed Systems) is due end
+       of Week 3 (Guidelines for paper summaries) Project Pre-Proposals
+       are due end of Week 32nd summary set (Distributed OS) is due end
+       of Week 5 3rd summary set (DCE,CORBA,Java,Messaging) is due end
+       of Week 7 Midterm  is at the beginning of Week 8 4th summary set (Cloud Computing, Web Services) is due end of Week 9 For each paper summary set, you will summarize two papers in Reading Materials section. Each paper should be summarized in one or 
+	   two pages. You can either use one summary (>=2 pages) to summarize two papers or submit two separate summaries (each one >=1page) Please submit your paper summaries and project proposals via the course dropbox
+       in https://eee.uci.edu/ (instead of sending emails) 
+  8.     
+   
+  
+  Instructor Information
+  
+  Nalini Venkatasubramanian (nalini@ics.uci.edu)
+  Office: Bren Hall 2086 
+  Office Hour: Thursdays, 11-12pm
+   
+  Reader:  Kerim Oktay. email: koktay@uci.edu  
+  Office : Bren Hall 2061
+  
+  Course
+  Description:
+  
+  CompSci 237 - Distributed
+  Systems discusses concepts, techniques and issues in
+  developing distributed systems middleware that provides high performance in large
+  scale distributed and networked environments. The course will cover existing
+  middleware standards and solutions such as DCE, CORBA, DCOM,.NET,EJB,J2EE,
+  XML, Web Services, cloud computing platforms and discuss their purposes,
+  relative advantages and shortcomings. Issues in designing  middleware environments for special
+  purpose needs (fault-tolerance, QoS, security etc.) will also be discussed.
+   
+  
+  Motivation
+  and Goals:
+  
+  Advances in networking,
+  communication, storage and computing technologies coupled with emerging novel
+  application areas is enabling the widespread use of large scale distributed
+  computing systems. These systems exhibit constant evolution as new
+  applications place specialized requirements from the computing and
+  communication infrastructure. Many applications provide QoS (Quality of
+  Service) parameters that define the extent to which performance
+  specifications such as responsiveness, reliability, resource utilization,
+  security and cost-effectiveness may be violated. These requirements are often
+  implemented via resource management mechanisms in the middleware. Distributed
+  middleware enables the modular connection of software components to manage
+  the resources of an open distributed system; it can be used to constrain the
+  global behavior of the distributed system to ensure safety while providing
+  cost-effective utilization of resources. This course will cover issues in
+  developing distributed systems middleware that provides distributed
+  application requirements while ensuring effective system utilization. 
+  
+   
+  Prerequisites:
+  
+  Undergraduate level course in
+  operating systems and networks. A prior course of distributed systems is
+  desirable. Working knowledge of Java is required. 
+  
+   
+   
+  Class
+  Schedule:
+  Lecture:  Mondays/Wednesdays
+  1:00 – 2:20pm  in PCB 1200
+   
+  Grading Policy:
+  Homeworks
+       (30%): 3 homeworks (weekly paper summaries), randomly selected each
+       worth 10% each.Midterm (35%)Class
+       Project (35%): Includes project proposal,final project demonstration and report.
+  
+   
+  
+  Guidelines for paper summaries:
+  
+  Each
+       paper summary should be 1-1.5 pages of text (suggested size 10-11 pt.,
+       single spaced, 1-inch margins) Summaries
+       should provide the following information about the paper in your own
+       words: The
+        main contributions of paper (the key problem(s), proposed techniques
+        and approaches). Critique
+        of approach, its advantages and its limitations. Implications
+        to technology practice i.e. implementation feasibility in a distributed
+        computing environment. 
+  
+   
+  
+  Guidelines for project report:
+  
+  Should be structured in this format5-7
+       pages of text (suggested size 10-11 pt., single spaced, 1-inch margins) Should
+        contain at least 10 references Desirable:
+        scope out the problem area and classify approaches 
+   	 Should be submitted via the course dropbox
+       in https://eee.uci.edu/ (instead of sending emails) 
+  
+
+ 

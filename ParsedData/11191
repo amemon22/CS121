@@ -1,0 +1,253 @@
+Autonomous Characters
+
+Fall 2003
+
+Tuesdays 3:00-5:50pm
+
+Location: HIB335
+
+Instructor
+
+Professor Bill Tomlinson
+
+Email: wmt@uci.edu
+
+Office: ICS 430A
+
+Office Phone: (949) 824-9333
+
+Office Hours: Thursdays 3-5pm.  Please make appointment by email to confirm time and location (my
+office or HIB335).
+
+Overview
+
+This course is a hands-on introduction to the process of
+making real-time animated autonomous characters.  Our goal is to build characters that are intelligent, complex,
+perceptive, expressive and social.  The
+tools we will use to make these characters include computer programming,
+computer animation and concepts from the disciplines of autonomous agents,
+drama, human-computer interaction and film. 
+In particular, we will focus on how to make these characters have some
+of the skills of human actors.  This
+course will have a significant computer programming component, but is designed
+for students with no coding experience.
+
+Schedule
+
+
+  Date
+  
+  Topic
+  
+  Readings Due
+  
+  Assignments
+  
+  Sept 30
+  
+  Introduction/
+  Animation
+  
+   
+  
+   
+  
+  Oct 2
+  
+  Makeup class for Oct 7 – Coding/ Emotion
+  
+  Lasseter 87 (handout)
+  Stein 03 Ch1 (link)
+  
+   
+  
+  Oct 7
+  
+  No Class
+  
+  Picard 97 (handout)
+  Wilson 99 (link)
+  Stein 03 Ch 2 (link)
+  
+  Assignment 1 due
+  (by email)
+  
+  Oct 14
+  
+  Action Selection/Perception
+  
+  Burke 01 (link)
+  Tomlinson 02 (link)
+  Stein 03 Ch 3 (link)
+  
+  Assignment 2 due
+  
+  Oct 21
+  
+  Attention/Sound
+   
+   
+  
+  Braitenberg 86 (handout)
+  Acting reading (TBA)
+  vectorpark (link) 
+  Stein 03 Ch 4 (link)
+  
+  Assignment 3 due
+  
+  Oct 28
+  
+  Memory/Social
+  (form teams, discuss needs for group project)
+  
+  Reeves 96 (handout)
+  Bates 94 (handout) 
+  Stein 03 Ch 5 (link)
+  
+  Assignment 4 due 
+   
+   
+  
+  Nov 4
+  
+  Motor Control/Action Selection II
+  
+  Perlin 96 (link)
+  Perlin Face Demo (link)
+  Stein 03 Ch 6 (link)
+  
+  Final Project Part 1 due
+  
+  Nov 11
+  
+  Cinematography/Interfaces
+  
+  Tomlinson 00 (link)
+  Film pamphlet (handout) 
+  Stein 03 Ch 6 (link)
+  
+  Final Project Part 2 due
+  
+  Nov 18
+  
+  Integration
+  
+  Reichardt 78 (handout)
+  Stein 03 Ch 7 (link)
+  
+  Final Project Part 3 due
+  
+  Nov 25
+  
+  Animation II
+  
+  Maestri 96 (handout)
+  Stein 03 Ch 8 (link)
+  
+   
+  
+  Dec 2
+  
+  Presentation of Final Project
+  
+   
+  
+  Final Project Part 4 Due
+  
+
+Assignments, Handouts and Links:
+
+Professor Tomlinson will bring the assignments and any handouts
+to class the week before they are due. 
+In addition to doing the assignments, you are responsible for emailing a
+short paragraph about each reading to Professor Tomlinson BEFORE class that
+week.  These summaries should
+demonstrate that you have understood the content of each reading.
+
+ 
+
+Handouts:
+
+Lasseter
+     87: Lasseter, J. 1987. Principles of Traditional Animation Applied to 3D
+     Computer Animation. SIGGRAPH 87.Picard
+     97: Picard, R. 1997. Affective Computing. 
+     MIT Press. Cambridge, MA.Braitenberg
+     86: Braitenberg, V. 1986. Vehicles: Experiments in Synthetic Psychology.
+     MIT Press. Cambridge, MA.Reeves
+     96: Reeeves, B. and Nass, C. 1996. The Media Equation. CSLI Publications.
+     Stanford, CA.Bates
+     94: Bates, J. 1994. The Role of Emotion in Believable Agents.
+     Communications of the ACM, Vol.37, No. 7Reichardt
+     78: Reichardt, J. 1978. Robots: Fact, Fiction and Prediction. Penguin
+     Books.Maestri
+     96: Maestri, G. 1996. Digital Character Animation. New Riders.
+
+ 
+
+Links: 
+
+Stein
+     03: http://www.cs101.org/ipij/Wilson
+     99: http://www.gamasutra.com/features/19990507/artificial_emotion_01.htmTomlinson
+     02: http://web.media.mit.edu/~badger/Publications/SCAAlphaWolfCameraReady.pdfBurke
+     01: http://characters.media.mit.edu/Papers/gdc01.pdfvectorpark:
+     http://www.vectorpark.com/ball.htmlPerlin
+     96: http://www.mrl.nyu.edu/publications/sig96-improv/sig96-improv.pdfPerlin
+     Face Demo: http://mrl.nyu.edu/~perlin/facedemo/Tomlinson
+     00 http://web.media.mit.edu/~badger/Publications/agents2000.pdf
+
+Grading:
+
+Four Assignments @ 10% = 40%
+
+One Final Project (four sub-parts) @ 40% = 40%
+
+One paragraph description of each reading we do = 10%
+(total)
+
+Class Participation = 10%
+
+ 
+
+Computer Labs
+
+HIB 335
+
+Hours: http://www.arts.uci.edu/admin/technology/facilities/artslab/schedule/fall03/hib335.html
+
+ 
+
+May also work in the ArtsLab, Studio
+4 Room 104
+
+Hours:
+
+http://www.arts.uci.edu/admin/technology/facilities/artslab/schedule/fall03/artslab.htm
+
+ 
+
+Computer and Network Use Policy
+
+When working on UCI systems, you are bound by the UCI
+Computer and Network Use Policy: http://www.policies.uci.edu/adm/pols/714-18.html
+
+ 
+
+Intellectual Property Policy
+
+The code base, models, animations and other materials that
+we will be using in this course belong to MIT and to Bill Tomlinson, and may be
+used only for purposes of to this course. 
+Please contact Professor Tomlinson if you have questions regarding these
+issues.
+
+ 
+
+Note
+
+These are guidelines intended to help students plan their
+work in this course.  However, the
+instructor reserves the right to make changes over the course of the quarter.
+
+ 

@@ -1,0 +1,26 @@
+Mathematical Reviews 2001e:52024
+
+			
+				Regression depth and center points
+				Annamaria Beatrice Amenta,
+Marshall Wayne Bern,
+David Eppstein,
+and Shang-Hua Teng
+				Discrete & Computational Geometry 23(3):305–323, 2000
+				Mathematical Reviews 2001e:52024, 2001
+				Reviewed by P. Laurie Davies
+
+				P. J. Rousseeuw and M. Hubert [Discrete Comput. Geom. 22 (1999), no. 2, 167--176; MR 2000e:52024; J. Amer. Statist. Assoc. 94 (1999), no. 446, 388--433; MR 2000i:62070] made the following two conjectures concerning the regression depth of points in $d$-dimensional Euclidean space: Conjecture 1. For any $d$-dimensional set of $n$ points there exists a hyperplane having regression depth $\lceil\frac{n}{d+1}\rceil$. Conjecture 2. For any point set there exist a partition into $\lceil \frac{n}{d+1}\rceil$ subsets and a hyperplane that has nonzero regression depth in each subset. The authors prove the first conjecture and make some progress on the second. The problems arise in the context of robust regression and have a natural geometric formulation. The proofs are based on projective geometry and are consequently of a completely different nature from the usual proofs of theorems in the area of robust statistics. The authors also consider the computational aspects of the problems.
+
+				
+					[D. Eppstein publications]
+					[Citation database]
+					[Reviews]
+				
+			
+
+			
+				Fano Experimental Web Server,
+				D. Eppstein,
+				School of Information & Computer Science,
+				UC Irvine

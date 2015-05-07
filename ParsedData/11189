@@ -1,0 +1,83 @@
+Autonomous Characters
+
+Fall 2003
+
+Tuesdays 3:00-5:50pm
+
+Location: HIB335
+
+Directions for Compiling the Codebase
+
+Note: These directions may not correspond exactly to the
+versions of software that you will be using. 
+Therefore, it is important that you follow the spirit of the directions,
+rather than the exact letter of them. 
+If you are having trouble, please ask any classmates who are nearby, or
+email me (wmt@uci.edu) and I will do my best
+to help.
+
+Make
+     sure you are logged in as ACE_<usernumber>.Create
+     a directory called c:\Files\ACE\ACE_<usernumber>\ on your
+     machine.  If the c:\Files\ACE
+     directory does not exist, please create it, then make your directory
+     inside it.Locate
+     the codebase zip file on the network drive in the lab –
+     X:/ORIGINALS/source.zip.Copy
+     the zip file to your directory.Right
+     click it and “extract all” of the zip file into your directory (e.g.,
+     c:/Files/ACE/ACE_01).  (It may want
+     to put them in a “source” subdirectory, but if you delete the word
+     “source” from the directory name, it will put them at the proper level.)Start->Software
+     Develop->EclipseFile->new
+     ->projectJava->Java
+     Project->Next->Project
+     name = ACUnclick
+     use defaultDirectory:
+     c:/Files/ACE/ACE_<USERNUMBER>/codeClick
+     FinishIt
+     may chug away for a few minutes  It
+     should create a directory called bin inside the code directory.  If the bin directory is anywhere else,
+     you probably typed in the directory wrong (like I did the first time!),
+     right click on the AC project in Ecplise (say no when it asks you to
+     delete the content), then delete the bin directory. Then go back to # 6
+     and try it again, this time with the right directory.If
+     asked, switch to the Java Perspective.It'll
+     chug away for a bit, and the bottom window will eventually fill with a bunch
+     of warnings.Change
+     the filter settings by clicking on the small icon with three arrows at the
+     top right of the Tasks window (bottom of eclipse screen).  Unclick
+      task Click
+      the box before "Where problem severity is" and click
+      "error"Click
+      okay, and the warnings should disappear.
+ Turn
+     on Window->Preferences->Java->Editor->Show Line NumbersGo
+     to window->preferences-> Workbench->check "Save all modified
+     resources automatically prior to manual build."The
+     Tasks window should now be empty. 
+     If not, we begin some compile-time debugging.***Make
+     the following changes to the code: 
+     In content/ac/PersonACE_01.java, lines ~75 and ~85 (both of which
+     read: 
+
+happinessSlider.setValue((int)
+(happiness * 1000));
+
+ 
+
+need to have
+the following line inserted BEFORE them:
+
+ 
+
+if
+(!Demo.fullScreen)
+
+ 
+
+      Then
+save PersonACE_01.java, which should compile it.
+
+Go
+     run the demo using “Directions for Running the Demo.”

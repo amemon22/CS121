@@ -1,0 +1,93 @@
+LoginPreferencesAbout Trac
+  
+    
+    
+  
+    
+      
+        Context Navigation
+          ? Previous ChangeWiki HistoryNext Change ?
+        
+      
+    
+      
+        Changes between
+          Version 48 and
+          Version 49 of
+          cs295-2011-fall
+      
+      
+        
+          
+          
+          
+          
+  View differences
+  inlineside by side
+  
+    
+             Show
+      
+             lines around each change
+    
+           Show the changes in full context
+  
+  
+    Ignore:
+    
+      
+      Blank lines
+    
+    
+      
+      Case changes
+    
+    
+      
+      White space changes
+    
+  
+  
+    
+  
+
+        
+      
+      Timestamp:
+            10/10/11 22:24:23 (4 years ago)
+        Author:
+          mjcarey
+        Comment:
+          
+          
+--
+
+
+        
+      
+        
+          Legend:
+          UnmodifiedAddedRemovedModified
+        
+        
+  
+        
+          cs295-2011-fall
+        
+        
+                    
+                      v48
+                  
+                    
+                      v49
+                   8484Thu, 11/03: Melnik, S., Gubarev, A., Long, J., Romer, G., Shivakumar, S., Tolton, M., and Vassilakis T. 2011. Dremel: interactive analysis of web-scale datasets. ''Commun. ACM'' 54, 6 (June 2011), 114-123. 8585 86 Thu, 11/03:   86Thu, 11/03: Erik Meijer. 2011. The world according to LINQ. ''Commun. ACM'' 54, 10 (October 2011), 45-51.  8787 8888=== Distributed Systems Principles === 
+      
+
+      
+  
+    
+    
+      
+      Powered by Trac 0.12.5
+        By Edgewall Software.
+      Visit the Trac open source project athttp://trac.edgewall.org/

@@ -1,0 +1,263 @@
+Search:
+
+
+
+
+
+
+
+
+
+
+
+HelpOnInstallingFastCgi
+
+
+
+
+
+
+
+Wiki
+
+Main_PageRecentChangesFindPageHelpContentsHelpOnInstalling/FastCgi
+
+
+
+Page
+Immutable PageCommentsInfoAttachments
+
+
+    More Actions:
+    Raw TextPrint ViewRender as DocbookDelete Cache------------------------Check SpellingLike PagesLocal Site Map------------------------Rename PageDelete Page------------------------Subscribe User------------------------Remove SpamRevert to this revisionPackage PagesSync Pages------------------------LoadSaveSlideShow
+    
+    
+
+
+
+
+
+
+
+User
+Login
+
+
+
+
+
+FastCGI is a method which enables a web server to communicate with long-running scripts. This has the advantage that the script is only started and initialized one time, and that data could be cached in memory from request to request, enhancing the performance of the CGI application.  Follow the basic installation for your operating system as described in other parts of the MoinMoin installation documentation. This is HelpOnInstalling/BasicInstallation and HelpOnInstalling/WikiInstanceCreation, or HelpOnInstalling/ApacheOnLinux in most cases.  Contents
+Using MoinMoin with FastCgi
+Deploying on Apache
+Script options
+FastCgiExternalServer
+FastCgiServer
+Example for Apache2 on Debian
+Running as an external application and/or on Windows
+Fallback to CGI if FastCGI is not available
+Deploying on lighttpd
+Configuration
+Starting MoinMoin instance
+Multiple moin processes
+Optional: striping /mywiki from URI
+Multiple moin processes automatically started by lighttpd
+MoinMoin Startup script
+Adding MoinMoin startup script on Mac OS X
+Using HTTP Authentication
+Root wiki example
+(sub)domain root wiki
+lighttpd configuration
+MoinMoin configration 
+Using MoinMoin with FastCgi
+For more general information: http://fastcgi.com - FastCGI Homepage FastCGI — The Forgotten Treasure (introduction) 
+Deploying on Apache
+To deploy MoinMoin using FastCGI you need an apache with mod_fastcgi. Please refer to the documentation of mod_fastcgi ( mod_fastcgi homepage ). Don't forget to install the fastcgi Apache module (e.g. libapache2-mod-fastcgi). Then in places where the documentation refers to moin.cgi you use moin.fcg instead. Be sure that .fcg is handled by the FastCGI module (AddHandler fastcgi-script .fcg in your apache config). Normally Apache will start CGI scripts with its own user and group, or with the user and group of the VirtualHost if you are using the suexec wrapper. To enable this with FastCGI you need to use FastCgiWrapper On in your Apache config (check your distributions and/or FastCGI Documentation). Be sure to restart your Apache after you changed py files (i.e. the config) for a running FastCGI server, or you won't see any changes! 
+Script options
+No matter how and where you install or how you configure, you can add some options (in Apache config or as self-running process). Here is a list of some options. 
+FastCgiExternalServer
+-host [hostname:port]     - The port and on what host name to respond.
+-idle-timeout [seconds]   - The number of seconds of inactivity allowed before request is aborted. 
+FastCgiServer
+-port [port]              - The port the application will use for communication with the web server.
+-idle-timeout [seconds]   - The number of seconds of inactivity allowed before request is aborted.
+Example for Apache2 on Debian
+Edit the /etc/apache2/conf.d/your_wiki: <IfModule mod_fastcgi.c>
+   AddHandler fastcgi-script .fcgi .fcg
+   FastCgiServer /your/path/to/moin.fcg -idle-timeout 60 -processes 1
+   ScriptAlias /your_wiki "/your/path/to/moin.fcg"
+</IfModule>number of processes depends on your hardware.. Expand the Apache installation: apt-get install libapache2-mod-fastcgi
+a2enmod fastcgi
+apache2ctl gracefulNow, your wiki should respond a little faster. 
+Running as an external application and/or on Windows
+(see also ../ApacheOnWin32withFastCgi for a Windows-specific how-to) MoinMoin can be run as an external application that answers FastCGI request via a local TCP/IP socket. This works on Windows as well. All you need to do (after having installed mod_fastcgi and a working MoinMoin instance) is this: Select a port number for the internal communication. It should be larger than 1023. For this example, we chose 8888 (just for fun). Add the following lines to your httpd.conf:Alias /moin.fcg "/your/path/to/moin.fcg"
+FastCgiExternalServer "/your/path/to/moin.fcg" -host localhost:8888Edit moin.fcg. Replacefcg = thfcgi.FCGI(handle_request, max_requests=max_requests, backlog=backlog, max_threads=max_threads) with fcg = thfcgi.FCGI(handle_request, 0, 8888, max_requests=max_requests, backlog=backlog, max_threads=max_threads)Start the file moin.fcg manually like a Python script:python moin.fcgStart Apache. 
+Fallback to CGI if FastCGI is not available
+Install and test MoinMoin according to HelpOnInstalling/ApacheOnLinux. Then make and test the changes to run mod_fastcgi. If you are satisfied, you can add the following block to your apache config: <IfModule !mod_fastcgi.c>
+    ScriptAlias /mywiki "/your/path/to/moin.cgi"
+</IfModule>
+<IfModule mod_fastcgi.c>
+    AddHandler fastcgi-script .fcg
+    ScriptAlias /mywiki "/your/path/to/moin.fcg"
+</IfModule>Now Apache will use mod_fastcgi if available and otherwise use the slow cgi script. 
+Deploying on lighttpd
+The best option is to run moin as external application. In this case, you don't need to restart the web server when you want to restart moin.  Before you start please check that you have installed the FastCGI module for lighttpd. You can not use the one from Apache and this is usually not part of the lighttpd package  
+Configuration
+fastcgi.server = ( "/mywiki" =>
+                       ( "localhost" =>
+                         (
+                           "host" => "127.0.0.1",
+                           "port" => 8888,
+                           "check-local" => "disable",
+                           "broken-scriptfilename" => "enable",
+                         )
+                       )
+                   )Add an alias for your themes: alias.url = ( "/wiki/" => "/usr/share/moin/htdocs/" )
+Starting MoinMoin instance
+To start a MoinMoin instance, execute the file moin.fcg manually like this: python moin.fcg The MoinMoin process does not need to be run as root or www, but can also be run as a simple user. 
+Multiple moin processes
+If you start multiple moin instances on different ports, lighttpd balance the load automatically between them, using all the cpus. Use this configuration: fastcgi.server             = ( "/mywiki" =>
+                               ( "localhost" =>
+                                 ( "host" => "127.0.0.1", 
+                                   "port" => 1080,
+                                   "check-local" => "disable",
+                                   "broken-scriptfilename" => "enable",
+                                 ),
+                                 ( "host" => "127.0.0.1", 
+                                   "port" => 1081, 
+                                   "check-local" => "disable",
+                                   "broken-scriptfilename" => "enable",
+                                 ),
+                               )
+                             )
+Optional: striping /mywiki from URI
+If you want to strip /mywiki from URI, you should edit your moin.fcg script: request = request_fcgi.Request(req, env, form, properties={'script_name': '/'})
+Multiple moin processes automatically started by lighttpd
+As an alternative to manually starting multiple processes of moin.fcg and assigning a distinct TCP port to each, this task can be delegated to lighttpd itself. The key is to specify "bin-path" option to fastcgi.server, and to allow multiple moin.fcg processes to be started as configured by "min-procs" and "max-procs" options. The hidden trick is that lighttpd will allocate successive TCP port numbers to each process, starting with "port". Tested with lighttpd 1.4.10. Example: fastcgi.server = (  "/mywiki" =>
+  (( "docroot"   => "/",
+     "min-procs" => 4,
+     "max-procs" => 4,
+     # allocate successive port numbers for each process, starting with "port"
+     "bin-path"  => "/usr/local/bin/moin.fcg",
+     "host"      => "127.0.0.1",
+     "port"      => 2200,
+     "check-local" => "disable",
+     "broken-scriptfilename" => "enable",
+  ))
+)
+MoinMoin Startup script
+Here is a startup script for Mac OS X, using DarwinPortsStartup system. It is probably useful for other unix like platforms. # Start and stop multiple moin fast cgi instances runnings on PORTS
+
+NAME="moin"
+DIR="/www/org.mywiki/bin"
+FCGIAPP="./moin.fcg"
+PREFIX="/usr/local"
+
+# List of ports to start moin instances on, separated with whitesapce
+# Keep in sync with fastcgi.server in lighttpd.conf
+PORTS="1080 1081"
+
+start_on_port () {
+    # Start moin instance on port, leaving pid file
+    port=$1
+    
+    cd "${DIR}" && sudo -u www "${PREFIX}/bin/spawn-fcgi" \
+        -f "${FCGIAPP}" \
+        -p $port \
+        -P "${NAME}-${port}.pid" \
+        > /dev/null
+}
+
+kill_on_port () {
+    # Try to kill process using pid in pid file, then remove the pid file
+    pidFile="${DIR}/${NAME}-$1.pid"
+    kill `cat "$pidFile"` && rm -f "$pidFile" > /dev/null 
+}
+
+start () {
+    for port in $PORTS; do start_on_port $port; done 
+}
+
+stop () {
+    for port in $PORTS; do kill_on_port $port; done
+}
+
+case "$1" in
+start)
+    # XXX starting twice will break pid files (bug in spawn-fcgi)
+    start && echo -n " $NAME"
+        ;;
+stop)
+        stop && echo -n " $NAME"
+        ;;
+restart)
+    stop
+    start && echo -n " $NAME"
+        ;;
+*)
+        echo "Usage: `basename $0` {start|stop|restart}" >&2
+        ;;
+esac
+
+exit 0
+Adding MoinMoin startup script on Mac OS X
+With this script, moin instances will be started automatically on startup. Install darwinports Install DarwinPortsStartup package: sudo port install DarwinPortsStartupCopy moin.sh into /opt/local/etc/rc.d: sudo cp moin.sh /opt/local/etc/rc.d
+Using HTTP Authentication
+lighttpd mod_fastcgi does not add the AUTH_TYPE variable to the cgi environment, which will cause http auth in moin to fail.   See http://trac.lighttpd.net/trac/ticket/889 for more information, and an attached diff file to correct to issue. 
+Root wiki example
+$HTTP["host"] =~ "(www.)?wiki.foo.bar" {
+    alias.url = (
+        "/wiki" => "/home/wiki/foo/public_html/"
+    )
+    $HTTP["url"] !~ "^/wiki" {
+        setenv.add-request-header = ( "X-Moin-Location" => "/")
+        fastcgi.server += (
+            "/" => (
+                "wiki.foo.bar" => (
+                    "docroot" => "/",
+                    "socket" => "/tmp/foo-lighttpd.sock",
+                    "bin-path" => "/home/services/lighttpd/bin/execwrap",
+                    "check-local" => "disable",
+                    "max-procs" => 4,
+                    "min-procs" => 1,
+                    "bin-environment" => (
+                        "UID" => "50017", # foo
+                        "GID" => "1000", # users
+                        "TARGET" => "/home/wiki/foo/moin.fcg",
+                        "CHECK_GID" => "1"
+                    )
+                )
+            )
+        )
+    }
+}notes: This runs a root wiki (http://wiki.foo.bar/PageName) as a different user. The paths to execwrap, moin.fcg and public_html need to be customized. And the UID too, of course, and possibly GID. 
+(sub)domain root wiki
+This is a sample configuration for a single wiki, located at the root of a (sub)domain. First, an instance has to be created, following the instructions at HelpOnInstalling/WikiInstanceCreation. 
+lighttpd configuration
+$HTTP["host"] == "wiki.example.org" { 
+        alias.url += (  "/moin_static/" => "/usr/share/moin/htdocs/" )
+
+        url.rewrite-once = (
+                          "^/robots.txt" => "/moin_static/robots.txt",
+                        "^/favicon.ico" => "/moin_static/favicon.ico",
+                          "/moin_static[^/]*/(.*)" => "/moin_static/$1",
+                        "^/(.*)" => "/wiki/$1", )
+        fastcgi.server = ( "/wiki" =>
+                               ((
+                                   "docroot" => "/",
+                                   "host" => "127.0.0.1",
+                                   "bin-path"  => "/usr/share/moin/strigo/moin.fcg",
+                                   "port" => 8888,
+                                   "check-local" => "disable",
+                                   "broken-scriptfilename" => "enable",
+                                 ))
+                        )
+}
+MoinMoin configration
+Besides the normal Python path configuration, we need to specify explicitly that the request handler works at the "root" (moin.fcg):     #properties = {}
+    properties = {'script_name': '/'}
+
+
+
+
+
+MoinMoin PoweredPython PoweredGPL licensedValid HTML 4.01

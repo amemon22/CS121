@@ -1,0 +1,59 @@
+Search:
+
+
+
+
+
+
+
+Login
+
+
+
+EvaluationReportEnvironment
+
+
+
+
+FrontPageRecentChangesFindPageHelpContentsEnvironment
+
+
+
+Immutable PageCommentsInfoAttachments
+
+
+    More Actions:
+    Raw TextPrint ViewRender as DocbookDelete Cache------------------------Check SpellingLike PagesLocal Site Map------------------------Rename PageDelete Page------------------------Subscribe User------------------------Remove SpamRevert to this revisionPackage PagesSync Pages------------------------LoadSaveSlideShow
+    
+    
+
+
+
+
+
+
+
+
+
+
+Evaluation Environment
+A cluster was lent to the evaluation by Eleazar Eskin at UCLA. The evaluation was performed on: 5 Linux machines (CentOS 4.5) Intel Xeon E5345, Dual Quad-Core, 2.33GHz, 8GB RAM 2 solvers per machine (1 solver per CPU) 10 solvers running concurrently Each solver limited to: 20 minutes CPU time 3GB RAM Evaluation/Report/Environment  (last edited 2008-11-15 01:23:03 by ArthurChoi)
+
+
+
+
+
+
+Immutable PageCommentsInfoAttachments
+
+
+    More Actions:
+    Raw TextPrint ViewRender as DocbookDelete Cache------------------------Check SpellingLike PagesLocal Site Map------------------------Rename PageDelete Page------------------------Subscribe User------------------------Remove SpamRevert to this revisionPackage PagesSync Pages------------------------LoadSaveSlideShow
+    
+    
+
+
+
+
+
+MoinMoin PoweredPython PoweredGPL licensedValid HTML 4.01
