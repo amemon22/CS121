@@ -1,9 +1,0 @@
-Examples of Data Sets for Text AnalysisCS 175, Winter 2015 
-
- The
-links below point to just a small number of the many data sets for text
-analysis that you can find on the Web, and should help you in terms of
-finding data sets to work on for your projects.   Data Sets with Classification Labels or CategoriesDocument classification data sets (a large collection of different data sets used in text classification research)Movie review data for sentiment analysis, from Pang and Lee, CornellProduct review data from Johns Hopkins University  (goal is to predict ratings on scale of 1 to 5)A variety of different text data sets from the UCI Machine Learning Repository (many already in the "bag of words" format)Data Sets on "learning to rank" (for Web search)All of Wikipedia  (note
-that these data sets can also be used for unsupervised learning, such
-as clustering or topic modeling, by ignoring the class labels during
-training).Interesting Text Data Sets (often used for Clustering and other Exploratory Methods)Enron email data set, from CMUText of US Federal Court Cases Internet Movie Database, with 425k titles and 1.7 million filmographies of cast and crewFull text of US patents from 1980 to the present, from the USPTO (US Patent and Trademark Office), hosted by Google   Data Sets used to build Language Models and Auto-complete AlgorithmsNgram data from Peter Norvig (Google), with an accompaying tutorial book chapterNgram data from Microsoft's Bing Web serviceGoogle ngrams, and Google syntactic ngrams over time, from Google books     
